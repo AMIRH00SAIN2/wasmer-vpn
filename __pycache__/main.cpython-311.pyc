@@ -1,0 +1,974 @@
+§
+
+    öç.j ã                   óh	  — U d dl Z d dlZd dlZd dlZd dlZd dlZd dlmZ d dlmZ d dl	m
+Z
+mZ d dlm
+Z
+mZmZmZmZmZ d dlmZmZmZmZ d dlmZ d dlZd dlZd dlZd dlZ ej        ej        d¬	¦  «          ej         d
+¦  «        Z! e
+ddd¬¦  «        Z" e#ej$         %                    d
+d¦  «        ¦  «        ej$         %                    d ej&        d¦  «        ¦  «        dœZ'e" (                    edgddgdg¬¦  «         i Z)e*e+d<   i Z,e*e+d<   d d d  ej        ¦   «         dœZ- e
+d¬¦  «        Z.e
+e+d<    ee#¦  «        Z/e*e+d<   da0ej1        dz  e+d<   i Z2e*e+d<    e j3        ¦   «         Z4dZ5dZ6d e7d!e7fd"„Z8d# e8ej$         %                    d$d%¦  «        ¦  «        iZ9i Z:e*e+d&<    e j3        ¦   «         Z;d!e7fd'„Z<d(e7dz  d!e=fd)„Z>d(e7dz  fd*„Z?d+efd,„Z@d-„ ZAe" B                    d.¦  «        d/„ ¦   «         ZCe" B                    d0¦  «        d1„ ¦   «         ZDd!e7fd2„ZEdnd3e7dz  d!e7fd4„ZFdod5e7d6e7d!e7fd7„ZGd!e7fd8„ZHd9eId:e7d!e#fd;„ZJd<„ ZKd=e7fd>„ZLe" %                    d?¦  «        d@„ ¦   «         ZMe" %                    dA¦  «        dB„ ¦   «         ZNe" O                    dC¦  «        d+efdD„¦   «         ZPe" O                    dE¦  «        d+efdF„¦   «         ZQe" %                    dG¦  «        d+efdH„¦   «         ZRe" O                    dI¦  «         ee@¦  «        fd+efdJ„¦   «         ZSe" %                    dK¦  «         ee@¦  «        fdL„¦   «         ZTe" O                    dM¦  «         ee@¦  «        fd+efdN„¦   «         ZUe" %                    dM¦  «         ee@¦  «        fdO„¦   «         ZVe" W                    dP¦  «         ee@¦  «        fd=e7d+efdQ„¦   «         ZXe" Y                    dP¦  «         ee@¦  «        fd=e7fdR„¦   «         ZZdSZ[dTe\fdU„Z]d=e7dVe#d!e=fdW„Z^d=e7dXe#fdY„Z_dZed[e j`        d\e7d]e7fd^„ZadZed_e jb        d\e7d]e7fd`„Zce" d                    da¦  «        dZed5e7fdb„¦   «         ZedcZfddZge" %                    dee¬f¦  «        d+efdg„¦   «         Zhe" %                    dhe¬f¦  «        d+efdi„¦   «         Ziejdjk    r ejk        e"dke'dl         ¬m¦  «         dS dS )pé    N)Údatetime)Úquote)ÚdequeÚdefaultdict)ÚFastAPIÚRequestÚ
+HTTPExceptionÚ	WebSocketÚWebSocketDisconnectÚDepends)ÚResponseÚHTMLResponseÚJSONResponseÚRedirectResponse)ÚCORSMiddlewarez'%(asctime)s [%(levelname)s] %(message)s)ÚlevelÚformatzREN-GatewayÚREN)ÚtitleÚdocs_urlÚ	redoc_urlÚPORTi@  Ú
+SECRET_KEYé    )ÚportÚsecretÚ*T)Ú
+allow_originsÚallow_credentialsÚ
+allow_methodsÚ
+allow_headersÚconnectionsÚconnection_sockets)Útotal_bytesÚtotal_requestsÚtotal_errorsÚ
+start_timeé2   )ÚmaxlenÚ
+error_logsÚhourly_trafficÚhttp_clientÚLINKSÚren_sessioni€:	 ÚpwÚreturnc                 ó   — t          j        | › t          d         ›                      ¦   «         ¦  «                             ¦   «         S )Nr   )ÚhashlibÚsha256ÚCONFIGÚencodeÚ	hexdigest)r/   s    ú*C:\Users\SHIELD SYSTEM\REN-Gateway\main.pyÚ
+hash_passwordr8   2   s:   € ÝŒ>˜RÐ3¥¨Ô!1Ð3Ð3×:Ò:Ñ<Ô<Ñ=Ô=×GÒGÑIÔIÐIó    Ú
+password_hashÚADMIN_PASSWORDÚadminÚSESSIONSc               ƒ   óÚ   K  — t          j        d¦  «        } t          4 ƒd {V —† t          j        ¦   «         t          z   t
+          | <   d d d ¦  «        ƒd {V —† n# 1 ƒd {V —†swxY w Y   | S )Nr   )ÚsecretsÚ
+token_urlsafeÚ
+SESSIONS_LOCKÚtimeÚSESSION_TTLr=   ©Útokens    r7   Úcreate_sessionrF   9   sä   è è € ÝÔ! "Ñ%Ô%€EÝð 4ð 4ð 4ð 4ð 4ð 4ð 4ð 4Ýœ)™+œ+­Ñ3‰ð4ð 4ð 4ñ 4ô 4ð 4ð 4ð 4ð 4ð 4ð 4ð 4ð 4ð 4ð 4ð 4ð 4ð 4ð 4ð 4ð 4ð 4ð 4øøøð 4ð 4ð 4ð 4à€Ls   ¤$AÁ
+A$Á'A$rE   c              ƒ   ó<  K  — | sdS t           4 ƒd {V —† t                               | ¦  «        }||t          j        ¦   «         k     r/t                               | d ¦  «         	 d d d ¦  «        ƒd {V —† dS 	 d d d ¦  «        ƒd {V —† dS # 1 ƒd {V —†swxY w Y   d S )NFT)rA   r=   ÚgetrB   Úpop)rE   Úexps     r7   Úis_valid_sessionrK   ?   sd  è è € Øð ØˆuÝð ð ð ð ð ð ð ð ÝlŠl˜5Ñ!Ô!ˆØð 	˜#¥¤	¡¤Ò+ð 	ÝLŠL˜ Ñ%Ô%Ð%Øð	ð ð ñ ô ð ð ð ð ð ð ð ð ð ð
+ ðð ð ñ ô ð ð ð ð ð ð ð ð ð ð ð ð ð ð ð ð ð ð ð øøøð ð ð ð ð ð s   ”ABÁ7BÂ
+BÂBc              ƒ   ó¬   K  — | rOt           4 ƒd {V —† t                               | d ¦  «         d d d ¦  «        ƒd {V —† d S # 1 ƒd {V —†swxY w Y   d S d S ©N)rA   r=   rI   rD   s    r7   Údestroy_sessionrN   I   sð   è è € Øð &Ý ð 	&ð 	&ð 	&ð 	&ð 	&ð 	&ð 	&ð 	&ÝLŠL˜ Ñ%Ô%Ð%ð	&ð 	&ð 	&ñ 	&ô 	&ð 	&ð 	&ð 	&ð 	&ð 	&ð 	&ð 	&ð 	&ð 	&ð 	&ð 	&ð 	&ð 	&ð 	&ð 	&ð 	&ð 	&ð 	&ð 	&øøøð 	&ð 	&ð 	&ð 	&ð 	&ð 	&ð&ð &s   ’AÁ
+AÁAÚrequestc              ƒ   ó”   K  — | j                              t          ¦  «        }t          |¦  «        ƒ d {V —†st	          dd¬¦  «        ‚|S )Né‘  Úunauthorized©Ústatus_codeÚdetail)ÚcookiesrH   ÚSESSION_COOKIErK   r	   ©rO   rE   s     r7   Úrequire_authrY   N   sV   è è € ØŒO×Ò¥Ñ/Ô/€EÝ! %Ñ(Ô(Ð(Ð(Ð(Ð(Ð(Ð(ð DÝ¨°NÐCÑCÔCÐCØ€Lr9   c               ƒ   ó~  K  — 	 t          j        d¦  «        ƒ d {V —† 	 t          ¦   «         } | r~| dk    rxt          j        d¬¦  «        4 ƒd {V —†}|                     d| › d¦  «        ƒ d {V —† d d d ¦  «        ƒd {V —† n# 1 ƒd {V —†swxY w Y   t                               d¦  «         n# t          $ r Y nw xY wŒ»)	NTiX  Ú	localhostç      $@©Útimeoutúhttps://ú/healthzKeep-alive ping sent)	ÚasyncioÚsleepÚ
+get_domainÚhttpxÚAsyncClientrH   ÚloggerÚinfoÚ	Exception)ÚdomainÚclients     r7   Ú
+keep_aliverk   T   sš  è è € ð	ÝŒm˜CÑ Ô Ð Ð Ð Ð Ð Ð Ð ð	Ý‘\”\ˆFØð 
+4˜& KÒ/ð 
+4Ý Ô,°TÐ:Ñ:Ô:ð Að Að Að Að Að Að A¸fØ Ÿ*š*Ð%?°Ð%?Ð%?Ð%?Ñ@Ô@Ð@Ð@Ð@Ð@Ð@Ð@Ð@ðAð Að Añ Aô Að Að Að Að Að Að Að Að Að Að Að Að Að Að Að Að Að Að Aøøøð Að Að Að Aå—’Ð2Ñ3Ô3Ð3øøÝð 	ð 	ð 	ØˆDð	øøøð	s5   Ÿ1B. Á BÁ0B. Â
+BÂB. ÂBÂB. Â.
+B;Â:B;Ústartupc               ƒ   ó   K  — t          j        dd¬¦  «        } t          j        dd¬¦  «        }t          j        | |d¬¦  «        at
+                               d	t          d
+         › ¦  «         t          j	        t          ¦   «         ¦  «         d S )Niô  éd   )Úmax_connectionsÚmax_keepalive_connectionsg      >@r\   )ÚconnectT)Úlimitsr^   Úfollow_redirectszREN started on port r   )rd   ÚLimitsÚTimeoutre   r,   rf   rg   r4   ra   Úcreate_taskrk   )rr   r^   s     r7   rl   rl   `   s‚   è è € õ Œ\¨#ÈÐ
+MÑ
+MÔ
+M€FÝŒm˜D¨$Ð/Ñ/Ô/€GÝÔ#¨6¸7ÐUYÐZÑZÔZ€KÝ
+‡K‚KÐ7¥v¨f¤~Ð7Ð7Ñ8Ô8Ð8ÝÔ
+™œÑ%Ô%Ð%Ð%Ð%r9   Úshutdownc               ƒ   óZ   K  — t           r!t                                ¦   «         ƒ d {V —† d S d S rM   )r,   Úaclose© r9   r7   rw   rw   i   sB   è è € åð #Ý× Ò Ñ"Ô"Ð"Ð"Ð"Ð"Ð"Ð"Ð"Ð"Ð"ð#ð #r9   c                  óÎ   — t           j                             dt           j                             dd¦  «        ¦  «                             dd¦  «                             dd¦  «        S )NÚRENDER_EXTERNAL_URLÚRAILWAY_PUBLIC_DOMAINr[   r_   Ú zhttp://)ÚosÚenvironrH   Úreplacerz   r9   r7   rc   rc   n   sf   € Ý
+Œ:>Š>Ð/µ´·²Ð@WÐYdÑ1eÔ1eÑfÔf×nÒnÐoyÐ{}Ñ~Ô~÷  Gò  Gð  HQð  SUñ  Vô  Vð  Vr9   Úseedc                 ó  — | €‰t          t          j        d¦  «        ¦  «        d d…         dz   t          j        d¦  «        z   dz   t          j        d¦  «        z   dz   t          j        d¦  «        z   dz   t          j        d¦  «        z   S t          j        | › t
+          d         ›                      ¦   «         ¦  «                             ¦   «         }|d d…         › d|dd…         › d|dd…         › d|dd…         › d|dd	…         › 	S )
+Né   é   ú-é   é   r   é   é   r   )Ústrr?   Ú	token_hexr2   r3   r4   r5   r6   )r‚   Úhs     r7   Ú
+generate_uuidrŽ   q   sH  € Øð bÝ•7Ô$ RÑ(Ô(Ñ)Ô)¨"¨1¨"Ô-°Ñ3µgÔ6GÈÑ6JÔ6JÑJÈSÑPÕSZÔSdÐefÑSgÔSgÑgÐjmÑmÕpwô  qBð  CDñ  qEô  qEñ  Eð  HKñ  Kõ  NUô  N_ð  `añ  Nbô  Nbñ  bð  	bÝŒ˜$Ð2¥ xÔ 0Ð2Ð2×9Ò9Ñ;Ô;Ñ<Ô<×FÒFÑHÔH€AØŒeÐ@Ð@a˜˜"˜”gÐ@Ð@  " R %¤Ð@Ð@¨1¨R°¨U¬8Ð@Ð@°a¸¸2¸´hÐ@Ð@Ð@r9   ÚuuidÚremarkc           
+      óÖ   — t          ¦   «         }d| › }ddd|||dddœ}d                     d	„ |                     ¦   «         D ¦   «         ¦  «        }d
+| › d|› d|› d
+t          |¦  «        › S )Nz/ws/ÚnoneÚtlsÚwsÚchromezhttp/1.1)Ú
+encryptionÚsecurityÚtypeÚhostÚpathÚsniÚfpÚalpnú&c              3   ó^   K  — | ](\  }}|› d t          t          |¦  «        ¦  «        › V — Œ)dS )ú=N)r   r‹   )Ú.0ÚkÚvs      r7   ú	<genexpr>z&generate_vless_link.<locals>.<genexpr>„   s@   è è € ÐGÐG±°°1˜Ð+Ð+E¥# a¡&¤&™MœMÐ+Ð+ÐGÐGÐGÐGÐGÐGr9   zvless://ú@z:443?ú#)rc   ÚjoinÚitemsr   )r   r   ri   rš   ÚparamsÚquerys         r7   Úgenerate_vless_linkr«   w   s   € Ý
+‰\Œ\€FØ$ˆ=ˆ=€DàØØØØØØØð	ð 	€Fð 
+HŠHÐGÐG¸¿º¹¼ÐGÑGÔGÑGÔG€EØAdÐAÐA˜VÐAÐA¨%ÐAÐAµ%¸±-´-ÐAÐAÐAr9   c                  óœ   — t          t          j        ¦   «         t          d         z
+  ¦  «        } | dz  | dz  dz  | dz  }}}|d›d|d›d|d›S )Nr'   i  é<   Ú02dú:)ÚintrB   Ústats)Úsecsr   ÚmÚss       r7   Úuptimerµ   ‡   sb   € ÝtŒy‰{Œ{U <Ô0Ñ0Ñ1Ô1€DØd‰l˜T D™[¨RÑ/°¸±ˆ!€q€AØÐ%Ð%Ð%aÐ%Ð%Ð%˜aÐ%Ð%Ð%Ð%r9   ÚvalueÚunitc                 óê   — |                      ¦   «         }|dk    rt          | dz  dz  dz  ¦  «        S |dk    rt          | dz  dz  ¦  «        S |dk    rt          | dz  ¦  «        S t          | ¦  «        S )NÚGBi   ÚMBÚKB)Úupperr°   )r¶   r·   s     r7   Úparse_size_to_bytesr½   Œ   s{   € Ø:Š:‰<Œ<€DØˆt‚|Ð;C ¨¡¨tÑ 3°dÑ :Ñ;Ô;Ð;Øˆt‚|Ð4C ¨¡¨tÑ 3Ñ4Ô4Ð4Øˆt‚|Ð-C ¨¡Ñ-Ô-Ð-Ýˆu‰:Œ:Ðr9   c               ƒ   ó  K  — t           4 ƒd {V —† t          sBt          d¦  «        } dddt          j        ¦   «                              ¦   «         ddœt          | <   	 d d d ¦  «        ƒd {V —† d S # 1 ƒd {V —†swxY w Y   d S )NÚdefaultÚDefaultr   T©ÚlabelÚlimit_bytesÚ
+used_bytesÚ
+created_atÚactive)Ú
+LINKS_LOCKr-   rŽ   r   ÚnowÚ	isoformat)Úuids    r7   Úensure_default_linkrË   “   sD  è è € Ýð Kð Kð Kð Kð Kð Kð Kð KÝð 	KÝ 	Ñ*Ô*ˆCØ#,¸QÈaÕ_gÔ_kÑ_mÔ_m×_wÒ_wÑ_yÔ_yð  FJð  Kð  KE#‰Jð  
+KðKð Kð Kñ Kô Kð Kð Kð Kð Kð Kð Kð Kð Kð Kð Kð Kð Kð Kð Kð Kð Kð Kð Kð Køøøð Kð Kð Kð Kð Kð Ks   A
+A.Á.
+A8Á;A8rÊ   c              ƒ   ób  ‡ K  — ˆ fd„t                                ¦   «         D ¦   «         }|D ]ƒ}t                               |¦  «        }|r/	 |                     dd¬¦  «        ƒ d {V —† n# t
+          $ r Y nw xY wt                                |d ¦  «         t                               |d ¦  «         Œ„d S )Nc                 óL   •— g | ] \  }}|                      d ¦  «        ‰k    ¯|‘Œ!S )r   )rH   )r¡   Úcidrg   rÊ   s      €r7   ú
+<listcomp>z.close_connections_for_link.<locals>.<listcomp>š   s4   ø€ ÐTÐTÐT™	˜˜T¸D¿HºHÀVÑ<LÔ<LÐPSÒ<SÐTÐTÐTÐTr9   iè  zlink deleted©ÚcodeÚreason)r"   r¨   r#   rH   Úcloserh   rI   )rÊ   Úto_closerÎ   r”   s   `   r7   Úclose_connections_for_linkrÕ   ™   sÝ   øè è € ØTÐTÐTÐT¥[×%6Ò%6Ñ%8Ô%8ÐTÑTÔT€HØð *ð *ˆÝ
+×
+#Ò
+# CÑ
+(Ô
+(ˆØ
+ð 	ð
+Ø—h’h D°hÑ@Ô@Ð@Ð@Ð@Ð@Ð@Ð@Ð@Ð@øÝð 
+ð 
+ð 
+Øð
+øøøåŠ˜˜TÑ"Ô"Ð"Ý×Ò˜s DÑ)Ô)Ð)Ð)ð*ð *s   Á
+A(Á(
+A5Á4A5ú/c               ƒ   ó,   K  — dddt          ¦   «         dœS )Nr   z1.0rÆ   )ÚserviceÚversionÚstatusri   )rc   rz   r9   r7   ÚrootrÛ   ¥   s   è è € à¨¸(ÍjÉlÌlÐ[Ð[Ð[r9   r`   c               ƒ   óN   K  — dt          t          ¦  «        t          ¦   «         dœS )NÚok)rÚ   r"   rµ   )Úlenr"   rµ   rz   r9   r7   Úhealthrß   ©   s"   è è € à­3­{Ñ+;Ô+;ÅvÁxÄxÐPÐPÐPr9   z
+/api/loginc              ƒ   óx  K  — |                       ¦   «         ƒ d {V —†}t          |                     d¦  «        pd¦  «        }t          |¦  «        t          d         k    rt          dd¬¦  «        ‚t
+          ¦   «         ƒ d {V —†}t          ddi¦  «        }|                     t          |t          dd	d
+¬¦  «         |S )NÚpasswordr~   r:   rQ   zInvalid passwordrS   rÝ   TÚlaxrÖ   )Úkeyr¶   Úmax_ageÚhttponlyÚsamesiterš   )Újsonr‹   rH   r8   ÚAUTHr	   rF   r   Ú
+set_cookierW   rC   )rO   Úbodyrá   rE   Úresps        r7   Ú	api_loginrì   ­   sÆ   è è € à—’‘”ÐÐÐÐÐÐ€DÝ4—8’8˜JÑ'Ô'Ð-¨2Ñ.Ô.€HÝXÑÔ¥$ Ô"7Ò7ð HÝ¨Ð4FÐGÑGÔGÐGÝ Ñ"Ô"Ð"Ð"Ð"Ð"Ð"Ð"€EÝ˜˜t˜Ñ%Ô%€DØ‡O‚O¨e½[ÐSWÐbgÐnq€OÑrÔrÐrØ€Kr9   z/api/logoutc              ƒ   óÌ   K  — | j                              t          ¦  «        }t          |¦  «        ƒ d {V —† t	          ddi¦  «        }|                     t          d¬¦  «         |S )NrÝ   TrÖ   )rš   )rV   rH   rW   rN   r   Ú
+delete_cookie)rO   rE   rë   s      r7   Ú
+api_logoutrï   ¸   sj   è è € àŒO×Ò¥Ñ/Ô/€EÝ
+˜%Ñ
+ Ô
+ Ð Ð Ð Ð Ð Ð Ð Ý˜˜t˜Ñ%Ô%€DØ×Ò•~¨CÐÑ0Ô0Ð0Ø€Kr9   z/api/mec              ƒ   ór   K  — | j                              t          ¦  «        }dt          |¦  «        ƒ d {V —†iS )NÚ
+authenticated)rV   rH   rW   rK   rX   s     r7   Úapi_merò   À   sA   è è € àŒO×Ò¥Ñ/Ô/€EØÕ#3°EÑ#:Ô#:Ð:Ð:Ð:Ð:Ð:Ð:Ð;Ð;r9   z/api/change-passwordc              ƒ   óÄ  K  — |                       ¦   «         ƒ d {V —†}t          |                     d¦  «        pd¦  «        }t          |                     d¦  «        pd¦  «        }t          |¦  «        t          d         k    rt          dd¬¦  «        ‚t
+          |¦  «        dk     rt          dd	¬¦  «        ‚t          |¦  «        t          d<   | j                             t          ¦  «        }t          4 ƒd {V —† t                               ¦   «          |r#t          j        ¦   «         t          z   t          |<   	 d d d ¦  «        ƒd {V —† n# 1 ƒd {V —†swxY w Y   d
+diS )NÚcurrent_passwordr~   Únew_passwordr:   i  zCurrent password is incorrectrS   é   z&Password must be at least 4 charactersrÝ   T)rç   r‹   rH   r8   rè   r	   rÞ   rV   rW   rA   r=   ÚclearrB   rC   )rO   Ú_rê   ÚcurrentÚnewÚ
+current_tokens         r7   Úapi_change_passwordrü   Å   sô  è è € à—’‘”ÐÐÐÐÐÐ€DÝ$—(’(Ð-Ñ.Ô.Ð4°"Ñ5Ô5€GÝ
+
+ˆdhŠh~Ñ&Ô&Ð,¨"Ñ
+-Ô
+-€CÝWÑÔ¥ oÔ!6Ò6ð UÝ¨Ð4SÐTÑTÔTÐTÝ
+ˆ3x„x!‚|ð ^Ý¨Ð4\Ð]Ñ]Ô]Ð]Ý)¨#Ñ.Ô.…DˆÑØ”O×'Ò'­Ñ7Ô7€MÝð @ð @ð @ð @ð @ð @ð @ð @ÝŠÑÔÐØð 	@Ý&*¤i¡k¤kµKÑ&?H]Ñ#Ð?ð@ð @ð @ñ @ô @ð @ð @ð @ð @ð @ð @ð @ð @ð @ð @ð @ð @ð @ð @ð @ð @ð @ð @øøøð @ð @ð @ð @ð 
+$ˆ<Ðs   Ã;?E
+Å
+EÅEz/statsc              ƒ   óð  K  — t          t          ¦  «        t          t          d         dz  d¦  «        t          d         t          d         t	          ¦   «         t          j        ¦   «                              ¦   «         t          t          ¦  «        dd …         t          t          ¦  «        t          ¦   «         t          j
+        d¬¦  «        t          j        ¦   «         j        t!          t"          ¦  «        d	œS )
+Nr$   i   r‡   r%   r&   iöÿÿÿgš™™™™™¹?)Úinterval)Úactive_connectionsÚtotal_traffic_mbr%   r&   rµ   Ú	timestampÚ
+recent_errorsÚlinks_countri   Úcpu_percentÚmemory_percentr+   )rÞ   r"   Úroundr±   rµ   r   rÈ   rÉ   Úlistr*   r-   rc   Úpsutilr  Úvirtual_memoryÚpercentÚdictr+   )rø   s    r7   Ú	get_statsr  Ö   sµ   è è € õ "¥+Ñ.Ô.Ý!¥%¨
+Ô"6¸+Ñ"FÈÑJÔJÝÐ 0Ô1Ý˜nÔ-Ý‘(”(Ý”\‘^”^×-Ò-Ñ/Ô/ÝjÑ)Ô)¨#¨$¨$Ô/Ý5‘z”zÝ‘,”,ÝÔ)°3Ð7Ñ7Ô7Ý Ô/Ñ1Ô1Ô9Ý~Ñ.Ô.ð
+ð 
+ð 
+r9   z
+/api/linksc              ƒ   ó‚  K  — |                       ¦   «         ƒ d {V —†}|                     d¦  «        pd                     ¦   «         d d…         }t          |                     d¦  «        pd¦  «        }|                     d¦  «        pd}|dk    rdnt	          ||¦  «        }t          |¦  «        }t          4 ƒd {V —† ||dt          j        ¦   «          	                    ¦   «         dd	œt          |<   d d d ¦  «        ƒd {V —† n# 1 ƒd {V —†swxY w Y   |||ddt          |         d
+         t          |d|› ¬¦  «        d
+œS )NrÂ   zNew Linkr­   Úlimit_valuer   Ú
+limit_unitr¹   TrÁ   rÅ   úREN-©r   ©r   rÂ   rÃ   rÄ   rÆ   rÅ   Ú
+vless_link)rç   rH   ÚstripÚfloatr½   rŽ   rÇ   r   rÈ   rÉ   r-   r«   )rO   rø   rê   rÂ   r  r  rÃ   rÊ   s           r7   Úcreate_linkr  ç   s5  è è € à—’‘”ÐÐÐÐÐÐ€DØ
+XŠXgÑ
+Ô
+Ð
+, *×3Ò3Ñ5Ô5°c°r°cÔ:€EÝ˜Ÿš Ñ/Ô/Ð4°1Ñ5Ô5€KØ—’˜,Ñ'Ô'Ð/¨4€JØ" aÒ'ÐY!!Õ-@ÀÈjÑ-YÔ-Y€KÝ
+˜Ñ
+Ô
+€CÝð Mð Mð Mð Mð Mð Mð Mð MØ$°[ÐPQÕaiÔamÑaoÔao×ayÒayÑa{Ôa{ð  HLð  Mð  Mˆc‰
+ðMð Mð Mñ Mô Mð Mð Mð Mð Mð Mð Mð Mð Mð Mð Mð Mð Mð Mð Mð Mð Mð Mð Møøøð Mð Mð Mð Mà %¸ÐSTÐ`dÕtyÐz}Ôt~ð  @Lô  uMõ  ]pð  qtð  }Kð  DIð  }Kð  }Kð  ]Lñ  ]Lô  ]Lð  Mð  Mð  Ms   Â=4DÄ
+D
+ÄD
+c              ƒ   óŠ  K  — g }t           4 ƒd {V —† t                               ¦   «         D ]X\  }}|                     ||d         |d         |d         |d         |d         t	          |d|d         › ¬¦  «        dœ¦  «         ŒY	 d d d ¦  «        ƒd {V —† n# 1 ƒd {V —†swxY w Y   |                     d	„ d
+¬¦  «         d|iS )
+NrÂ   rÃ   rÄ   rÆ   rÅ   r  r  r  c                 ó   — | d         S )NrÅ   rz   )Úxs    r7   ú<lambda>zlist_links.<locals>.<lambda>ù   s
+   € ˜a œo€ r9   T)rã   ÚreverseÚlinks)rÇ   r-   r¨   Úappendr«   Úsort)rø   ÚresultrÊ   Údatas       r7   Ú
+list_linksr!  ó   sð  è è € à
+€FÝð Jð Jð Jð Jð Jð Jð Jð JÝŸš™œð 	Jð 	J‰IˆCØMŠM 3°°g´ÈtÐTaÔObÐrvð  xDô  sEð  QUð  V^ô  Q_ð  osð  t@ô  oAõ  Qdð  ehð  qGð  x|ð  }Dô  xEð  qGð  qGð  QHñ  QHô  QHð  Ið  Iñ  
+Jô  
+Jð  
+Jð  
+Jð	JðJð Jð Jñ Jô Jð Jð Jð Jð Jð Jð Jð Jð Jð Jð Jð Jð Jð Jð Jð Jð Jð Jð Jøøøð Jð Jð Jð Jð ‡K‚KÐ-Ð-°t€KÑ<Ô<Ð<ØVÐÐs   ’A3BÂ
+B"Â%B"z/api/links/{uid}c              ƒ   óˆ  K  — |                      ¦   «         ƒ d {V —†}t          4 ƒd {V —† | t          vrt          dd¬¦  «        ‚d|v r#t	          |d         ¦  «        t          |          d<   d|v rat          |                     d¦  «        pd¦  «        }|                     d¦  «        pd}|dk    rdnt          ||¦  «        t          |          d	<   d
+|v r|d
+         rdt          |          d<   d|v r+t          |d         ¦  «        d d
+…         t          |          d<   	 d d d ¦  «        ƒd {V —† n# 1 ƒd {V —†swxY w Y   ddiS )Ni”  zlink not foundrS   rÆ   r  r   r  r¹   rÃ   Úreset_usagerÄ   rÂ   r­   rÝ   T)	rç   rÇ   r-   r	   Úboolr  rH   r½   r‹   )rÊ   rO   rø   rê   r  r  s         r7   Útoggle_linkr%  ü   só  è è € à—’‘”ÐÐÐÐÐÐ€DÝð :ð :ð :ð :ð :ð :ð :ð :Ø•eÐð 	JÝ¨CÐ8HÐIÑIÔIÐIØtÐð 	8Ý#'¨¨X¬Ñ#7Ô#7E#ŒJxÑ Ø˜DÐ ð 	pÝ §¢¨Ñ 7Ô 7Ð <¸1Ñ=Ô=ˆKØŸš ,Ñ/Ô/Ð7°4ˆJØ-8¸AÒ-=Ð(o¨¨ÕCVÐWbÐdnÑCoÔCoE#ŒJ}Ñ%Ø˜DÐ ð 	) T¨-Ô%8ð 	)Ø'(E#ŒJ|Ñ$Ødˆ?ð 	:Ý"% d¨7¤mÑ"4Ô"4°S°b°SÔ"9E#ŒJwÑÐ9ð:ð :ð :ñ :ô :ð :ð :ð :ð :ð :ð :ð :ð :ð :ð :ð :ð :ð :ð :ð :ð :ð :ð :øøøð :ð :ð :ð :ð 
+$ˆ<Ðs   ªC2D/Ä/
+D9Ä<D9c              ƒ   óÐ   K  — t           4 ƒd {V —† t                               | d ¦  «         d d d ¦  «        ƒd {V —† n# 1 ƒd {V —†swxY w Y   t          | ¦  «        ƒ d {V —† ddiS )NrÝ   T)rÇ   r-   rI   rÕ   )rÊ   rø   s     r7   Údelete_linkr'    sù   è è € åð ð ð ð ð ð ð ð Ý
+	Š	#tÑÔÐðð ð ñ ô ð ð ð ð ð ð ð ð ð ð ð ð ð ð ð ð ð ð øøøð ð ð ð å
+$ SÑ
+)Ô
+)Ð)Ð)Ð)Ð)Ð)Ð)Ð)Ø$ˆ<Ðs   >¾
+AÁAi   Úfirst_chunkc              ƒ   óÊ  ‡K  — t          | ¦  «        dk     rt          d¦  «        ‚d}|dz
+  }|dz
+  }| |         }|dz
+  }||z
+  }| |         }|dz
+  }t                               | ||dz   …         d¦  «        }|dz
+  }| |         }|dz
+  }|dk    r2| ||dz   …         Š|dz
+  }d	                     d
+„ ‰D ¦   «         ¦  «        }n–|dk    r5| |         }|dz
+  }| |||z   …                              dd¬
+¦  «        }||z
+  }n[|dk    rC| ||dz   …         Š|dz
+  }d                     ˆfd„t
+          ddd¦  «        D ¦   «         ¦  «        }nt          d|› ¦  «        ‚|||| |d …         fS )Né   zchunk too smallr   é   r„   r‡   Úbigrö   ú.c              3   ó4   K  — | ]}t          |¦  «        V — Œd S rM   )r‹   )r¡   Úbs     r7   r¤   z%parse_vless_header.<locals>.<genexpr>"  s(   è è € Ð6Ð6 a3˜q™6œ6Ð6Ð6Ð6Ð6Ð6Ð6r9   zutf-8Úignore)Úerrorsé   r¯   c              3   óF   •K  — | ]}‰|         d ›‰|dz            d ›V — ŒdS )Ú02xr+  Nrz   )r¡   ÚiÚ
+addr_bytess     €r7   r¤   z%parse_vless_header.<locals>.<genexpr>(  s@   øè è € Ð`Ð`È1˜j¨œmÐFÐF°¸A¸a¹C´ÐFÐFÐFÐ`Ð`Ð`Ð`Ð`Ð`r9   zunknown address type: )rÞ   Ú
+ValueErrorr°   Ú
+from_bytesr§   ÚdecodeÚrange)	r(  ÚposÚ	addon_lenÚcommandr   Ú	addr_typeÚaddressÚ
+domain_lenr6  s	           @r7   Úparse_vless_headerrA    sÑ  øè è € Ý
+ˆ;ÑÔ˜"Òð ,ÝÐ*Ñ+Ô+Ð+Ø
+€CØˆ1H€CˆcR‰iˆcØ˜CÔ €I #¨¡( #¨C°9Ñ,<¨CØ˜#Ô€G  q¡ Ý>Š>˜+ c¨#°©' kÔ2°EÑ:Ô:€D¸CÀ1¹H¸CØ˜CÔ €I #¨¡( #ØA‚~ð 
+?Ø   S¨1¡W Ô-ˆ
+¨s°a©x¨sØ—(’(Ð6Ð6¨:Ð6Ñ6Ô6Ñ6Ô6ˆˆØ	aŠð ?Ø  Ô%ˆ
+ s¨a¡x sØ˜c #¨
+Ñ"2Ð2Ô3×:Ò:¸7È8Ð:ÑTÔTˆÐVYÐ]gÑVgÐVYÐVYØ	aŠð ?Ø   S¨2¡X Ô.ˆ
+°°r±	°Ø—(’(Ð`Ð`Ð`Ð`ÕPUÐVWÐY[Ð]^ÑP_ÔP_Ð`Ñ`Ô`Ñ`Ô`ˆˆåÐ=°)Ð=Ð=Ñ>Ô>Ð>ØG˜T ;¨s¨t¨tÔ#4Ð4Ð4r9   Úextra_bytesc              ƒ   ón  K  — t           4 ƒd {V —† t                               | ¦  «        }|€	 d d d ¦  «        ƒd {V —† dS |d         s	 d d d ¦  «        ƒd {V —† dS |d         dk    r	 d d d ¦  «        ƒd {V —† dS |d         |z   |d         k    cd d d ¦  «        ƒd {V —† S # 1 ƒd {V —†swxY w Y   d S )NFrÆ   rÃ   r   TrÄ   )rÇ   r-   rH   )rÊ   rB  Úlinks      r7   Úcheck_quotarE  -  s>  è è € Ýð Ið Ið Ið Ið Ið Ið Ið IÝyŠy˜‰~Œ~ˆØÐ% ðIð Ið Iñ Iô Ið Ið Ið Ið Ið Ið Ið Ið Ið Ið HŒ~Ð+ eðIð Ið Iñ Iô Ið Ið Ið Ið Ið Ið Ið Ið Ið Ið 
+Ô !Ò#Ð0¨Dð	Ið Ið Iñ Iô Ið Ið Ið Ið Ið Ið Ið Ið Ið Ið
+ \Ô" [Ñ0°T¸-Ô5HÒHðIð Ið Ið Iñ Iô Ið Ið Ið Ið Ið Ið Ið Ið Ið Ið Ið Ið Ið Ið Ið Ið Ið Ið Iøøøð Ið Ið Ið Ið Ið Is#   B$Á	B$Á
+B$Á=B$Â$
+B.Â1B.Únc              ƒ   ó¸   K  — t           4 ƒd {V —† | t          v rt          |          dxx         |z
+  cc<   	 d d d ¦  «        ƒd {V —† d S # 1 ƒd {V —†swxY w Y   d S )NrÄ   )rÇ   r-   )rÊ   rF  s     r7   Ú	add_usagerH  5  sù   è è € Ýð *ð *ð *ð *ð *ð *ð *ð *Ø•%ˆ<ð 	*Ý#ŒJ|Ð$Ð$Ô$¨Ñ)Ð$Ð$Ñ$Ð$ð*ð *ð *ñ *ô *ð *ð *ð *ð *ð *ð *ð *ð *ð *ð *ð *ð *ð *ð *ð *ð *ð *ð *ð *øøøð *ð *ð *ð *ð *ð *s   %A	Á	
+AÁAÚ	websocketÚwriterÚconn_idÚlink_uidc              ƒ   óŠ  K  — 	 	 |                       ¦   «         ƒ d {V —†}|d         dk    rnI|                     d¦  «        p(|                     d¦  «        pd                     ¦   «         }|sŒjt          |¦  «        }t	          ||¦  «        ƒ d {V —†s|                      dd¬	¦  «        ƒ d {V —† nÅt          d
+xx         |z
+  cc<   t          dxx         dz
+  cc<   t          |         dxx         |z
+  cc<   t          t          j
+        ¦   «                              d
+¦  «        xx         |z
+  cc<   t          ||¦  «        ƒ d {V —† | 
+                    |¦  «         |                     ¦   «         ƒ d {V —† Œqn# t          $ r Y nw xY w|                     ¦   «          d S #  Y d S xY w# |                     ¦   «          w #  Y w xY wxY w)NTr˜   úwebsocket.disconnectÚbytesÚtextr~   éð  úquota exceededrÐ   r$   r%   r+  ú%H:00)ÚreceiverH   r5   rÞ   rE  rÓ   r±   r"   r+   r   rÈ   ÚstrftimerH  ÚwriteÚdrainr   Ú	write_eof)rI  rJ  rK  rL  Úmsgr   Úsizes          r7   Ú	ws_to_tcpr[  :  s  è è € ðð	5Ø!×)Ò)Ñ+Ô+Ð+Ð+Ð+Ð+Ð+Ð+ˆCØ6Œ{Ð4Ò4Ð;±eØ—7’7˜7Ñ#Ô#ÐG¨¯ª°©¬Ð(=¸2×'EÒ'EÑ'GÔ'GˆDØÐ!˜Ýt‘9”9ˆDÝ$ X¨tÑ4Ô4Ð4Ð4Ð4Ð4Ð4Ð4ð 
+QØ—o’o¨4Ð8HoÑIÔIÐIÐIÐIÐIÐIÐIÐIÈ5Ý-Ð Ð Ô  DÑ(Ð Ð Ñ ­%Ð0@Ð*AÐ*AÔ*AÀQÑ*FÐ*AÐ*AÑ*AÝ˜Ô  Ð)Ð)Ô)¨TÑ1Ð)Ð)Ñ)Ý8œ<™>œ>×2Ò2°7Ñ;Ô;Ð<Ð<Ô<ÀÑDÐ<Ð<Ñ<Ý˜H dÑ+Ô+Ð+Ð+Ð+Ð+Ð+Ð+Ð+ØLŠL˜ÑÔÐ f§l¢l¡n¤nÐ 4Ð 4Ð 4Ð 4Ð 4Ð 4Ð 4ñ	5øøõ Ð$Ð$Ð$  Ð$øøøà
+×
+Ò
+Ñ
+Ô
+Ð
+Ð
+Ð
+øØøøøøð ×
+Ò
+Ñ
+Ô
+Ð
+Ð
+øØøøøøøøsN   „E2E7 Å6F% Å7
+FÆF% ÆFÆF% ÆF ÆF"Æ%GÆ&F;Æ:GÆ;F?Æ=GÚreaderc              ƒ   ó8  K  — d}	 	 |                      t          ¦  «        ƒ d {V —†}|sd S t          |¦  «        }t          ||¦  «        ƒ d {V —†s|                      dd¬¦  «        ƒ d {V —† d S t
+          dxx         |z
+  cc<   t          |         dxx         |z
+  cc<   t          t          j	        ¦   «          
+                    d¦  «        xx         |z
+  cc<   t          ||¦  «        ƒ d {V —† |                      |rd|z   n|¦  «        ƒ d {V —† d	}Œ
+#  Y d S xY w)
+NTrQ  rR  rÐ   r$   rO  rS  s     F)
+ÚreadÚ	RELAY_BUFrÞ   rE  rÓ   r±   r"   r+   r   rÈ   rU  rH  Ú
+send_bytes)rI  r\  rK  rL  Úfirstr   rZ  s          r7   Ú	tcp_to_wsrb  N  s|  è è € Ø€Eð
+ð	ØŸš¥YÑ/Ô/Ð/Ð/Ð/Ð/Ð/Ð/ˆDØÐ˜˜Ýt‘9”9ˆDÝ$ X¨tÑ4Ô4Ð4Ð4Ð4Ð4Ð4Ð4ð 
+QØ—o’o¨4Ð8HoÑIÔIÐIÐIÐIÐIÐIÐIÐIÈ5È5Ý-Ð Ð Ô  DÑ(Ð Ð Ñ Ý˜Ô  Ð)Ð)Ô)¨TÑ1Ð)Ð)Ñ)Ý8œ<™>œ>×2Ò2°7Ñ;Ô;Ð<Ð<Ô<ÀÑDÐ<Ð<Ñ<Ý˜H dÑ+Ô+Ð+Ð+Ð+Ð+Ð+Ð+Ð+Ø×&Ò&¸uÐ'N¨°dÑ(:Ð(:È$ÑOÔOÐOÐOÐOÐOÐOÐOÐOØˆEñ	øð ˆDˆDˆDøøøs   †#D «AD Á/B%D ÄDz
+/ws/{uuid}c              ƒ   óD  K  — t          ¦   «         ƒ d {V —† |                      ¦   «         ƒ d {V —† t          j        d¦  «        }|t	          j        ¦   «                              ¦   «         ddœt          |<   | t          |<   d }	 t          |d¦  «        ƒ d {V —†ss|  
+                    dd¬¦  «        ƒ d {V —† |r| 
+                    ¦   «          n#  Y nxY wt                               |d ¦  «         t                               |d ¦  «         d S t          j
+        |                      ¦   «         d¬¦  «        ƒ d {V —†}|d	         d
+k    rW	 |r| 
+                    ¦   «          n#  Y nxY wt                               |d ¦  «         t                               |d ¦  «         d S |                     d¦  «        p(|                     d¦  «        pd
+                     ¦   «         }|sW	 |r| 
+                    ¦   «          n#  Y nxY wt                               |d ¦  «         t                               |d ¦  «         d S t#          |¦  «        ƒ d {V —†\  }}}}	t%          |¦  «        }
+t&          dxx         |
+z
+  cc<   t&          dxx         dz
+  cc<   t          |         dxx         |
+z
+  cc<   t(          t	          j        ¦   «                              d¦  «        xx         |
+z
+  cc<   t-          ||
+¦  «        ƒ d {V —† t          j
+        t          j        ||¦  «        d¬¦  «        ƒ d {V —†\  }}|	r½t%          |	¦  «        }t&          dxx         |z
+  cc<   t          |         dxx         |z
+  cc<   t(          t	          j        ¦   «                              d¦  «        xx         |z
+  cc<   t-          ||¦  «        ƒ d {V —† |                     |	¦  «         |                     ¦   «         ƒ d {V —† t          j        t7          | |||¦  «        ¦  «        }
+t          j        t9          | |||¦  «        ¦  «        }t          j        |
+|ht          j        ¬¦  «        ƒ d {V —†\  }}|D ]}|                     ¦   «          Œn„# t@          $ r Y nxtB          $ rl}t&          dxx         dz
+  cc<   tD           #                    tI          |¦  «        t	          j        ¦   «                              ¦   «         dœ¦  «         Y d }~nd }~ww xY w|r| 
+                    ¦   «          n#  Y nxY wt                               |d ¦  «         t                               |d ¦  «         d S # |r| 
+                    ¦   «          n#  Y nxY wt                               |d ¦  «         t                               |d ¦  «         w xY w)Nr…   r   )r   Úconnected_atrO  rQ  zquota exceeded or link deletedrÐ   g      .@r]   r˜   rN  rO  rP  r~   r$   r%   r+  rS  r\   )Úreturn_whenr&   )ÚerrorrB   )%rË   Úacceptr?   r@   r   rÈ   rÉ   r"   r#   rE  rÓ   rI   ra   Úwait_forrT  rH   r5   rA  rÞ   r±   r+   rU  rH  Úopen_connectionrV  rW  rv   r[  rb  ÚwaitÚFIRST_COMPLETEDÚcancelr   rh   r*   r  r‹   )rI  r   rK  rJ  Ú	first_msgr(  r=  r?  r   Úinitial_payloadrZ  r\  Úp_sizeÚtask_upÚ	task_downÚdoneÚpendingÚtÚexcs                      r7   Úwebsocket_tunnelrv  _  s  è è € å
+Ñ
+Ô
+ÐÐÐÐÐÐÐØ
+×
+Ò
+Ñ
+Ô
+ÐÐÐÐÐÐÐÝÔ# AÑ&Ô&€GØ$(½(¼,¹.¼.×:RÒ:RÑ:TÔ:TÐ_`ÐaÐa…KÑØ"+ÕwÑØ
+€Fð".Ý   qÑ)Ô)Ð)Ð)Ð)Ð)Ð)Ð)ð 	^Ø—/’/ tÐ4T/ÑUÔUÐUÐUÐUÐUÐUÐUÐUð8 ð 	Ø—’‘”øØDDøøøÝŠ˜ Ñ&Ô&Ð&Ý×Ò˜w¨Ñ-Ô-Ð-Ð-Ð-õ? "Ô*¨9×+<Ò+<Ñ+>Ô+>ÈÐMÑMÔMÐMÐMÐMÐMÐMÐMˆ	ØVÔÐ 6Ò6Ð>¸ð4 ð 	Ø—’‘”øØDDøøøÝŠ˜ Ñ&Ô&Ð&Ý×Ò˜w¨Ñ-Ô-Ð-Ð-Ð-ð;  —m’m GÑ,Ô,ÐV°·²¸vÑ1FÔ1FÐ1LÈ"×0TÒ0TÑ0VÔ0VˆØÐ"˜Fð0 ð 	Ø—’‘”øØDDøøøÝŠ˜ Ñ&Ô&Ð&Ý×Ò˜w¨Ñ-Ô-Ð-Ð-Ð-õ7 9KÈ;Ñ8WÔ8WÐ2WÐ2WÐ2WÐ2WÐ2WÐ2WÑ/ˆ˜$ Ý;ÑÔˆÝ
+ˆmÐÐÔ Ñ$ÐÐÑ¥eÐ,<Ð&=Ð&=Ô&=ÀÑ&BÐ&=Ð&=Ñ&=ÝGÔ˜WÐ%Ð%Ô%¨Ñ-Ð%Ð%Ñ%Ý•x”|‘~”~×.Ò.¨wÑ7Ô7Ð8Ð8Ô8¸DÑ@Ð8Ð8Ñ8Ý˜˜dÑ#Ô#Ð#Ð#Ð#Ð#Ð#Ð#Ð#Ý&Ô/µÔ0GÈÐQUÑ0VÔ0VÐ`dÐeÑeÔeÐeÐeÐeÐeÐeÐe‰ˆØð 	@Ý˜Ñ)Ô)ˆFÝ-Ð Ð Ô  FÑ*Ð Ð Ñ Ý˜Ô  Ð)Ð)Ô)¨VÑ3Ð)Ð)Ñ)Ý8œ<™>œ>×2Ò2°7Ñ;Ô;Ð<Ð<Ô<ÀÑFÐ<Ð<Ñ<Ý˜D &Ñ)Ô)Ð)Ð)Ð)Ð)Ð)Ð)Ð)ØLŠL˜Ñ)Ô)Ð)°·²±´Ð+?Ð+?Ð+?Ð+?Ð+?Ð+?Ð+?ÝÔ%¥i°	¸6À7ÈDÑ&QÔ&QÑRÔRˆÝÔ'­	°)¸VÀWÈdÑ(SÔ(SÑTÔTˆ	Ý%œl¨G°YÐ+?ÍWÔMdÐeÑeÔeÐeÐeÐeÐeÐeÐe‰
+ˆˆgØÐ$Ð$ˆA˜!Ÿ(š(™*œ*˜*˜*Ð$øÝÐ$Ð$Ð$  Ýð Sð Sð SÝ
+ˆnÐÐÔ Ñ"ÐÐÑÝ×Ò¥C¨¡H¤Hµh´l±n´n×6NÒ6NÑ6PÔ6PÐQÐQÑRÔRÐRÐRÐRÐRÐRÐRøøøøðSøøøð ð 	Ø—’‘”øØDDøøøÝŠ˜ Ñ&Ô&Ð&Ý×Ò˜w¨Ñ-Ô-Ð-Ð-Ð-øð	 ð 	Ø—’‘”øØDDøøøÝŠ˜ Ñ&Ô&Ð&Ý×Ò˜w¨Ñ-Ô-Ð-Ð-øøøs™   Â3Q/ Â8C
+ Ã
+CÄ:Q/ Å	E ÅE"ÆA Q/ Ç G5 Ç5G9È4H:Q/ Ñ.U	 Ñ/
+S0Ñ9U	 Ñ;	S0ÒA"S+Ó&U	 Ó+S0Ó0U	 Ó5T
+ Ô
+TÕ	VÕU!Õ VÕ!U%Õ#<VuF  <!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>REN</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html[data-theme="dark"]{--bg:#0a0a0a;--surface:#141414;--surface2:#1c1c1c;--border:rgba(255,255,255,0.06);--text:rgba(255,255,255,0.92);--text2:rgba(255,255,255,0.5);--text3:rgba(255,255,255,0.25);--primary:#dc2626;--primary-glow:rgba(220,38,38,0.15);--accent:#991b1b;--error:#ef4444;--error-bg:rgba(239,68,68,0.08)}
+html[data-theme="light"]{--bg:#ffffff;--surface:#ffffff;--surface2:#f9fafb;--border:rgba(0,0,0,0.06);--text:rgba(0,0,0,0.88);--text2:rgba(0,0,0,0.5);--text3:rgba(0,0,0,0.25);--primary:#16a34a;--primary-glow:rgba(22,163,74,0.12);--accent:#15803d;--error:#dc2626;--error-bg:rgba(220,38,38,0.06)}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;min-height:100vh;display:flex;align-items:center;justify-content:center;background:var(--bg);color:var(--text);transition:background .3s,color .3s}
+
+.toolbar{position:fixed;top:20px;right:20px;display:flex;gap:6px;z-index:10}
+.toolbar button{width:36px;height:36px;border-radius:10px;border:1px solid var(--border);background:var(--surface);color:var(--text2);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:15px;transition:all .2s}
+.toolbar button:hover{border-color:var(--primary);color:var(--primary)}
+.toolbar button.active{background:var(--primary);color:#fff;border-color:var(--primary)}
+
+.login-page{width:100%;max-width:380px;padding:0 20px}
+.login-card{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:44px 36px 36px;position:relative;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08)}
+.login-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--primary)}
+
+.brand{text-align:center;margin-bottom:36px}
+.brand svg{margin-bottom:20px}
+.brand h1{font-size:20px;font-weight:700;color:var(--text);letter-spacing:-0.02em}
+.brand p{font-size:12px;color:var(--text3);margin-top:6px;font-weight:500;letter-spacing:0.04em;text-transform:uppercase}
+
+.form-group{margin-bottom:20px}
+.form-group label{display:block;font-size:12px;font-weight:600;color:var(--text2);margin-bottom:8px;text-transform:uppercase;letter-spacing:0.04em}
+.form-group input{width:100%;padding:11px 14px;background:var(--surface2);border:1px solid var(--border);border-radius:10px;color:var(--text);font-size:14px;font-family:inherit;outline:none;transition:all .2s}
+.form-group input:focus{border-color:var(--primary);box-shadow:0 0 0 3px var(--primary-glow)}
+.form-group input::placeholder{color:var(--text3)}
+
+.login-btn{width:100%;padding:12px;background:var(--primary);border:none;border-radius:10px;color:#fff;font-size:14px;font-weight:600;font-family:inherit;cursor:pointer;transition:all .2s;letter-spacing:0.01em}
+.login-btn:hover{filter:brightness(1.1);transform:translateY(-1px);box-shadow:0 4px 16px rgba(79,124,255,0.3)}
+.login-btn:active{transform:translateY(0)}
+
+.error-msg{background:var(--error-bg);border:1px solid rgba(255,77,106,0.15);color:var(--error);padding:10px 14px;border-radius:10px;font-size:13px;display:none;margin-bottom:20px;text-align:center;font-weight:500}
+.error-msg.show{display:block}
+</style>
+</head>
+<body>
+<div class="toolbar">
+  <button id="lang-toggle" onclick="cycleLang()" title="Language">EN</button>
+  <button id="theme-toggle" onclick="toggleTheme()" title="Theme">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+  </button>
+</div>
+<div class="login-page">
+  <div class="login-card">
+    <div class="brand">
+      <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+        <rect width="56" height="56" rx="14" fill="url(#logo-grad)"/>
+        <circle cx="28" cy="28" r="14" stroke="#fff" stroke-width="1.5" opacity="0.3"/>
+        <circle cx="28" cy="18" r="3.5" fill="#fff"/>
+        <circle cx="19" cy="33" r="3.5" fill="#fff"/>
+        <circle cx="37" cy="33" r="3.5" fill="#fff"/>
+        <line x1="28" y1="21.5" x2="21" y2="30" stroke="#fff" stroke-width="1.5" opacity="0.8"/>
+        <line x1="28" y1="21.5" x2="35" y2="30" stroke="#fff" stroke-width="1.5" opacity="0.8"/>
+        <line x1="22.5" y1="33" x2="33.5" y2="33" stroke="#fff" stroke-width="1.5" opacity="0.8"/>
+        <circle cx="28" cy="28" r="2" fill="#fff" opacity="0.9"/>
+        <defs><linearGradient id="logo-grad" x1="0" y1="0" x2="56" y2="56"><stop stop-color="#dc2626"/><stop offset="1" stop-color="#991b1b"/></linearGradient></defs>
+      </svg>
+      <h1>REN</h1>
+      <p>v1.0</p>
+    </div>
+    <div class="error-msg" id="err-box"></div>
+    <form id="login-form">
+      <div class="form-group">
+        <label data-en="Password" data-fa="Ø±Ù…Ø² Ø¹Ø¨ÙˆØ±">Password</label>
+        <input type="password" id="password" placeholder="Enter password" autofocus>
+      </div>
+      <button type="submit" class="login-btn" data-en="Sign In" data-fa="ÙˆØ±ÙˆØ¯">Sign In</button>
+    </form>
+  </div>
+</div>
+<script>
+let lang=localStorage.getItem('ren_lang')||'en';
+let theme=localStorage.getItem('ren_theme')||'dark';
+function setLang(l){lang=l;document.body.dir=l==='fa'?'rtl':'ltr';document.querySelectorAll('[data-en]').forEach(el=>{const v=el.getAttribute('data-'+l);if(v)el.textContent=v});document.getElementById('lang-toggle').textContent=l.toUpperCase();localStorage.setItem('ren_lang',l)}
+function cycleLang(){setLang(lang==='en'?'fa':'en')}
+function applyTheme(t){theme=t;document.documentElement.setAttribute('data-theme',t);localStorage.setItem('ren_theme',t)}
+function toggleTheme(){applyTheme(theme==='dark'?'light':'dark')}
+applyTheme(theme);setLang(lang);
+document.getElementById('login-form').addEventListener('submit',async e=>{
+  e.preventDefault();const err=document.getElementById('err-box');err.classList.remove('show');
+  try{
+    const r=await fetch('/api/login',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({password:document.getElementById('password').value})});
+    if(!r.ok){const d=await r.json().catch(()=>({}));throw new Error(d.detail||'Failed');}
+    location.href='/dashboard';
+  }catch(e){err.textContent=e.message;err.classList.add('show')}
+});
+</script>
+</body>
+</html>uë¦  <!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>REN</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html[data-theme="dark"]{--bg:#0a0a0a;--surface:#141414;--surface2:#1c1c1c;--surface3:#2a2a2a;--border:rgba(255,255,255,0.06);--border2:rgba(255,255,255,0.1);--text:rgba(255,255,255,0.92);--text2:rgba(255,255,255,0.5);--text3:rgba(255,255,255,0.25);--primary:#dc2626;--primary-glow:rgba(220,38,38,0.15);--primary-dim:rgba(220,38,38,0.1);--accent:#991b1b;--green:#22c55e;--green-dim:rgba(34,197,94,0.1);--red:#ef4444;--red-dim:rgba(239,68,68,0.08);--yellow:#fbbf24;--sidebar-bg:#0f0f0f;--shadow:0 1px 3px rgba(0,0,0,0.4)}
+html[data-theme="light"]{--bg:#ffffff;--surface:#ffffff;--surface2:#f9fafb;--surface3:#f3f4f6;--border:rgba(0,0,0,0.06);--border2:rgba(0,0,0,0.1);--text:rgba(0,0,0,0.88);--text2:rgba(0,0,0,0.5);--text3:rgba(0,0,0,0.25);--primary:#16a34a;--primary-glow:rgba(22,163,74,0.1);--primary-dim:rgba(22,163,74,0.06);--accent:#15803d;--green:#16a34a;--green-dim:rgba(22,163,74,0.06);--red:#dc2626;--red-dim:rgba(220,38,38,0.06);--yellow:#d97706;--sidebar-bg:#ffffff;--shadow:0 1px 3px rgba(0,0,0,0.06)}
+html,body{height:100%}
+body{font-family:'Inter','Vazirmatn',-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;display:flex;transition:background .3s,color .3s}
+body[dir="rtl"]{direction:rtl;text-align:right}
+::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:var(--surface3);border-radius:3px}
+
+.sidebar{width:220px;background:var(--sidebar-bg);border-right:1px solid var(--border);display:flex;flex-direction:column;position:fixed;left:0;top:0;bottom:0;z-index:100;transition:background .3s}
+.sidebar-brand{padding:16px 16px 14px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border)}
+.sidebar-brand-left{display:flex;align-items:center;gap:10px}
+.sidebar-brand-left .brand-name{font-size:15px;font-weight:700;color:var(--text);letter-spacing:-0.02em}
+.sidebar-brand-right{display:flex;gap:4px}
+.sidebar-brand-right button{width:28px;height:28px;border-radius:7px;border:1px solid var(--border);background:var(--surface);color:var(--text3);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:12px;transition:all .2s}
+.sidebar-brand-right button:hover{border-color:var(--primary);color:var(--primary)}
+.sidebar-nav{flex:1;padding:8px;overflow-y:auto}
+.nav-section{font-size:10px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:0.08em;padding:14px 12px 6px}
+.nav-item{display:flex;align-items:center;gap:10px;padding:9px 12px;margin:1px 0;border-radius:8px;color:var(--text2);font-size:13px;font-weight:500;cursor:pointer;transition:all .15s;text-decoration:none;border:none;background:none;width:100%;text-align:left}
+.nav-item:hover{background:var(--primary-dim);color:var(--text)}
+.nav-item.active{background:var(--primary-dim);color:var(--primary);font-weight:600}
+.nav-icon{width:18px;height:18px;flex-shrink:0;opacity:0.7}
+.nav-item.active .nav-icon{opacity:1}
+.nav-badge{margin-left:auto;background:var(--surface3);color:var(--text3);font-size:10px;padding:2px 7px;border-radius:8px;font-weight:600}
+.sidebar-footer{padding:12px;border-top:1px solid var(--border)}
+.sidebar-footer .footer-row{display:flex;gap:4px;margin-bottom:8px}
+.sidebar-footer .footer-btn{flex:1;padding:6px;border:1px solid var(--border);border-radius:7px;background:var(--surface);color:var(--text3);font-family:inherit;font-size:11px;font-weight:600;cursor:pointer;transition:all .2s;text-align:center}
+.sidebar-footer .footer-btn.active{background:var(--primary);color:#fff;border-color:var(--primary)}
+.sidebar-footer .footer-btn:hover:not(.active){border-color:var(--border2);color:var(--text2)}
+.sidebar-footer .logout-btn{width:100%;padding:7px;border:1px solid var(--border);border-radius:7px;background:none;color:var(--text3);font-family:inherit;font-size:11px;font-weight:600;cursor:pointer;transition:all .2s;display:flex;align-items:center;justify-content:center;gap:6px}
+.sidebar-footer .logout-btn:hover{background:var(--red-dim);border-color:rgba(255,77,106,0.2);color:var(--red)}
+.sidebar-footer .version{text-align:center;font-size:10px;color:var(--text3);margin-top:8px;letter-spacing:0.02em}
+
+.main{margin-left:220px;flex:1;padding:24px 28px 48px;min-height:100vh}
+.page{display:none}.page.active{display:block}
+.page-header{margin-bottom:20px;display:flex;align-items:center;justify-content:space-between}
+.page-title{font-size:18px;font-weight:700;color:var(--text);letter-spacing:-0.01em}
+.page-sub{font-size:12px;color:var(--text3);margin-top:3px}
+
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}
+.stat-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px 18px;transition:box-shadow .2s}
+.stat-card:hover{box-shadow:var(--shadow)}
+.stat-label{font-size:11px;color:var(--text3);font-weight:600;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:8px}
+.stat-value{font-size:22px;font-weight:700;color:var(--text);letter-spacing:-0.02em}
+.stat-unit{font-size:12px;font-weight:400;color:var(--text3)}
+
+.card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:18px;margin-bottom:12px;transition:box-shadow .2s}
+.card:hover{box-shadow:var(--shadow)}
+.card-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
+.card-title{font-size:13px;font-weight:600;display:flex;align-items:center;gap:8px;color:var(--text)}
+
+.btn{font-family:inherit;font-size:12px;font-weight:600;border-radius:8px;padding:7px 14px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;border:none;transition:all .15s}
+.btn-primary{background:var(--primary);color:#fff}
+.btn-primary:hover{filter:brightness(1.1)}
+.btn-secondary{background:var(--surface3);color:var(--text2);border:1px solid var(--border);position:relative;overflow:hidden}
+.btn-secondary:hover{border-color:var(--primary);color:var(--primary);transform:translateY(-1px);box-shadow:0 2px 8px var(--primary-glow)}
+.btn-danger{background:var(--red-dim);color:var(--red);border:1px solid rgba(255,77,106,0.12)}
+.btn-danger:hover{background:rgba(255,77,106,0.15)}
+.btn-sm{padding:5px 10px;font-size:11px}
+
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+
+.table-wrap{overflow-x:auto}
+.table{width:100%;border-collapse:collapse}
+.table th{text-align:left;font-size:11px;font-weight:600;color:var(--text3);padding:10px 12px;text-transform:uppercase;letter-spacing:0.04em;border-bottom:1px solid var(--border);background:var(--surface2)}
+.table td{padding:10px 12px;border-bottom:1px solid var(--border);font-size:13px;vertical-align:middle}
+.table tr:last-child td{border-bottom:none}
+.table tbody tr:hover td{background:var(--primary-dim)}
+
+.tag{display:inline-flex;align-items:center;padding:2px 8px;border-radius:5px;font-size:10px;font-weight:700;letter-spacing:0.03em;text-transform:uppercase}
+.tag-vless{background:var(--primary-dim);color:var(--primary)}
+.tag-active{background:var(--green-dim);color:var(--green)}
+.tag-disabled{background:var(--red-dim);color:var(--red)}
+
+.usage-pill{display:flex;align-items:center;gap:8px;padding:3px 10px;border-radius:999px;background:var(--surface3);font-size:11px;color:var(--text2)}
+.usage-pill .used{color:var(--text);font-weight:600}
+.usage-pill .bar{flex:1;height:4px;background:var(--bg);border-radius:2px;min-width:50px}
+.usage-pill .fill{height:100%;border-radius:2px;transition:width .3s}
+.usage-pill .limit{color:var(--text3)}
+
+.toggle{width:34px;height:18px;border-radius:10px;background:var(--surface3);position:relative;cursor:pointer;transition:all .2s;border:1px solid var(--border)}
+.toggle::after{content:'';position:absolute;width:12px;height:12px;border-radius:50%;background:var(--text3);top:2px;left:2px;transition:all .2s}
+.toggle.on{background:var(--green);border-color:var(--green)}
+.toggle.on::after{left:18px;background:#fff}
+
+.sys-bar{height:6px;background:var(--surface3);border-radius:3px;overflow:hidden}
+.sys-bar-fill{height:100%;border-radius:3px;transition:width .4s}
+
+.status-item{display:flex;align-items:center;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--border)}
+.status-item:last-child{border-bottom:none}
+.status-key{color:var(--text2);font-size:12px;display:flex;align-items:center;gap:8px}
+.status-val{color:var(--text);font-weight:600;font-size:12px}
+
+.form-group{display:flex;flex-direction:column;gap:5px;margin-bottom:12px}
+.form-label{font-size:11px;font-weight:600;color:var(--text2);text-transform:uppercase;letter-spacing:0.04em}
+.form-input,.form-select{padding:8px 12px;border-radius:8px;border:1px solid var(--border);font-family:inherit;font-size:13px;outline:none;color:var(--text);background:var(--surface2);transition:all .2s}
+.form-input:focus,.form-select:focus{border-color:var(--primary);box-shadow:0 0 0 3px var(--primary-glow)}
+.form-select option{background:var(--surface2);color:var(--text)}
+.form-row{display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end}
+.form-row .form-group{margin-bottom:0;flex:1;min-width:100px}
+
+.empty{text-align:center;padding:40px 16px;color:var(--text3)}
+.empty-icon{font-size:32px;margin-bottom:10px;opacity:0.3}
+
+.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--surface);color:var(--text);border:1px solid var(--border);border-radius:10px;padding:10px 20px;font-size:12px;font-weight:500;opacity:0;transition:all .25s;z-index:999;display:flex;align-items:center;gap:8px;box-shadow:0 8px 24px rgba(0,0,0,0.2)}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.toast.error{border-color:var(--red-dim);color:var(--red)}
+
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:200;display:none;align-items:center;justify-content:center;backdrop-filter:blur(6px)}
+.modal-overlay.show{display:flex}
+.modal{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:24px;width:100%;max-width:460px;position:relative;box-shadow:0 20px 60px rgba(0,0,0,0.3);transform:scale(0.9);opacity:0;transition:all .3s cubic-bezier(0.34,1.56,0.64,1)}
+.modal-overlay.show .modal{transform:scale(1);opacity:1}
+.modal-title{font-size:15px;font-weight:700;margin-bottom:18px;color:var(--text)}
+.modal-close{position:absolute;top:12px;left:12px;background:var(--surface3);border:1px solid var(--border);color:var(--text3);width:28px;height:28px;border-radius:7px;cursor:pointer;font-size:12px;display:flex;align-items:center;justify-content:center;transition:all .2s}
+.modal-close:hover{background:var(--red-dim);color:var(--red);border-color:rgba(255,77,106,0.2)}
+.qr-box{text-align:center;padding:24px;background:var(--surface2);border-radius:14px;margin-top:14px;border:1px solid var(--border);transition:all .3s}
+.qr-box:hover{border-color:var(--primary);box-shadow:0 0 20px var(--primary-glow)}
+.qr-box img{max-width:220px;border-radius:10px;border:3px solid var(--surface);box-shadow:0 4px 16px rgba(0,0,0,0.1);transition:transform .3s}
+.qr-box img:hover{transform:scale(1.05)}
+
+@keyframes qrSlideUp{0%{transform:translateY(30px) scale(0.9);opacity:0}60%{transform:translateY(-4px) scale(1.02);opacity:1}100%{transform:translateY(0) scale(1);opacity:1}}
+@keyframes qrGlow{0%,100%{box-shadow:0 0 10px var(--primary-glow)}50%{box-shadow:0 0 25px var(--primary-glow),0 0 50px rgba(220,38,38,0.08)}}
+.qr-box.animate-in{animation:qrSlideUp .5s cubic-bezier(0.34,1.56,0.64,1) forwards}
+.qr-box.animate-glow{animation:qrGlow 2s ease-in-out 1}
+
+.btn-copy,.btn-qr{position:relative;overflow:hidden;font-family:inherit;font-size:11px;font-weight:600;border-radius:8px;padding:5px 10px;cursor:pointer;border:none;display:inline-flex;align-items:center;gap:4px;transition:all .25s cubic-bezier(0.34,1.56,0.64,1)}
+.btn-copy{background:var(--primary-dim);color:var(--primary);border:1px solid rgba(220,38,38,0.15)}
+.btn-copy:hover{background:var(--primary);color:#fff;transform:translateY(-2px);box-shadow:0 4px 12px var(--primary-glow)}
+.btn-copy:active{transform:translateY(0) scale(0.96)}
+.btn-qr{background:var(--green-dim);color:var(--green);border:1px solid rgba(34,197,94,0.15)}
+.btn-qr:hover{background:var(--green);color:#fff;transform:translateY(-2px);box-shadow:0 4px 12px rgba(34,197,94,0.2)}
+.btn-qr:active{transform:translateY(0) scale(0.96)}
+.btn-copy .ripple,.btn-qr .ripple{position:absolute;border-radius:50%;background:rgba(255,255,255,0.3);transform:scale(0);animation:rippleEffect .5s ease-out;pointer-events:none}
+@keyframes rippleEffect{to{transform:scale(3);opacity:0}}
+.detail-label{font-size:10px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:5px}
+.detail-value{padding:8px 12px;background:var(--surface2);border:1px solid var(--border);border-radius:8px;font-size:12px;color:var(--text2);word-break:break-all;font-family:'SF Mono',Monaco,Consolas,monospace;line-height:1.6}
+.detail-row{display:flex;gap:12px;margin-bottom:12px}
+.detail-row .detail-col{flex:1}
+.detail-actions{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px}
+
+.inbounds-toolbar{display:flex;align-items:center;gap:8px;margin-bottom:12px;flex-wrap:wrap}
+.search-box{flex:1;min-width:180px;position:relative}
+.search-box input{width:100%;padding:8px 12px 8px 32px;background:var(--surface2);border:1px solid var(--border);border-radius:8px;color:var(--text);font-size:12px;font-family:inherit;outline:none;transition:all .2s}
+.search-box input:focus{border-color:var(--primary);box-shadow:0 0 0 3px var(--primary-glow)}
+.search-box svg{position:absolute;left:10px;top:50%;transform:translateY(-50%);color:var(--text3)}
+.filter-chips{display:flex;gap:3px;padding:3px 5px;background:var(--surface2);border:1px solid var(--border);border-radius:8px}
+.chip{padding:5px 12px;border-radius:6px;font-size:11px;font-weight:600;color:var(--text3);cursor:pointer;border:none;background:none;transition:all .2s;font-family:inherit}
+.chip.active{background:var(--primary);color:#fff}
+.chip:hover:not(.active){background:var(--surface3);color:var(--text2)}
+
+.inbound-cards{display:none;flex-direction:column;gap:8px;padding:0 4px}
+.inbound-card{border:1px solid var(--border);border-radius:10px;padding:12px;background:var(--surface2);display:flex;flex-direction:column;gap:8px}
+.inbound-card-header{display:flex;align-items:center;justify-content:space-between}
+.inbound-card-id{font-size:10px;color:var(--text3);font-weight:600}
+.inbound-card-name{font-size:13px;font-weight:600;color:var(--text)}
+.inbound-card-actions{display:flex;gap:4px;justify-content:flex-end}
+
+.mobile-header{display:none;position:fixed;top:0;left:0;right:0;height:44px;background:var(--sidebar-bg);border-bottom:1px solid var(--border);z-index:90;align-items:center;justify-content:space-between;padding:0 14px}
+.menu-toggle{width:32px;height:32px;border-radius:8px;border:1px solid var(--border);background:var(--surface);color:var(--text2);display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:14px}
+.sidebar-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:99}
+.sidebar-overlay.show{display:block}
+
+@media(max-width:768px){
+  .sidebar{transform:translateX(-100%);width:220px;z-index:200}
+  .sidebar.open{transform:translateX(0);box-shadow:4px 0 20px rgba(0,0,0,0.4)}
+  .main{margin-left:0;padding-top:60px;padding-left:12px;padding-right:12px}
+  .mobile-header{display:flex}
+  .stats-row{grid-template-columns:1fr 1fr}
+  .grid-2{grid-template-columns:1fr}
+  .inbounds-toolbar{flex-direction:column;align-items:stretch}
+  .search-box{min-width:unset}
+  .filter-chips{justify-content:center}
+  .table-wrap{display:none}
+  .inbound-cards{display:flex}
+}
+@media(max-width:480px){
+  .stats-row{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<div class="toast" id="toast"></div>
+
+<div class="mobile-header">
+  <span style="font-weight:700;font-size:13px">REN</span>
+  <button class="menu-toggle" onclick="document.getElementById('sidebar').classList.toggle('open');document.getElementById('sidebar-overlay').classList.toggle('show')">&#9776;</button>
+</div>
+<div class="sidebar-overlay" id="sidebar-overlay" onclick="document.getElementById('sidebar').classList.remove('open');this.classList.remove('show')"></div>
+
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-brand">
+    <div class="sidebar-brand-left">
+      <svg width="28" height="28" viewBox="0 0 56 56" fill="none">
+        <rect width="56" height="56" rx="14" fill="url(#lg)"/>
+        <circle cx="28" cy="28" r="14" stroke="#fff" stroke-width="1.5" opacity="0.3"/>
+        <circle cx="28" cy="18" r="3.5" fill="#fff"/>
+        <circle cx="19" cy="33" r="3.5" fill="#fff"/>
+        <circle cx="37" cy="33" r="3.5" fill="#fff"/>
+        <line x1="28" y1="21.5" x2="21" y2="30" stroke="#fff" stroke-width="1.5" opacity="0.8"/>
+        <line x1="28" y1="21.5" x2="35" y2="30" stroke="#fff" stroke-width="1.5" opacity="0.8"/>
+        <line x1="22.5" y1="33" x2="33.5" y2="33" stroke="#fff" stroke-width="1.5" opacity="0.8"/>
+        <circle cx="28" cy="28" r="2" fill="#fff" opacity="0.9"/>
+        <defs><linearGradient id="lg" x1="0" y1="0" x2="56" y2="56"><stop stop-color="#dc2626"/><stop offset="1" stop-color="#991b1b"/></linearGradient></defs>
+      </svg>
+      <span class="brand-name">REN</span>
+    </div>
+    <div class="sidebar-brand-right">
+      <button onclick="toggleTheme()" id="theme-btn" title="Toggle theme">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav class="sidebar-nav">
+    <div class="nav-section">Main</div>
+    <button class="nav-item active" data-page="dashboard">
+      <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+      <span data-en="Dashboard" data-fa="Ø¯Ø§Ø´Ø¨ÙˆØ±Ø¯">Dashboard</span>
+    </button>
+    <button class="nav-item" data-page="inbounds">
+      <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg>
+      <span data-en="Inbounds" data-fa="Ø§ÛŒÙ†Ø¨Ø§Ù†Ø¯Ù‡Ø§">Inbounds</span>
+      <span class="nav-badge" id="links-badge">0</span>
+    </button>
+    <button class="nav-item" data-page="traffic">
+      <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+      <span data-en="Traffic" data-fa="ØªØ±Ø§ÙÛŒÚ©">Traffic</span>
+    </button>
+    <div class="nav-section">System</div>
+    <button class="nav-item" data-page="security">
+      <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+      <span data-en="Security" data-fa="Ø§Ù…Ù†ÛŒØª">Security</span>
+    </button>
+  </nav>
+  <div class="sidebar-footer">
+    <div class="footer-row">
+      <button class="footer-btn active" onclick="setLang('en')" id="lang-en">EN</button>
+      <button class="footer-btn" onclick="setLang('fa')" id="lang-fa">FA</button>
+    </div>
+    <button class="logout-btn" onclick="fetch('/api/logout',{method:'POST'}).then(()=>location.href='/login')">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+      <span data-en="Logout" data-fa="Ø®Ø±ÙˆØ¬">Logout</span>
+    </button>
+    <div class="version">v1.0</div>
+  </div>
+</aside>
+
+<main class="main">
+
+  <section class="page active" id="page-dashboard">
+    <div class="page-header">
+      <div>
+        <div class="page-title" data-en="Dashboard" data-fa="Ø¯Ø§Ø´Ø¨ÙˆØ±Ø¯">Dashboard</div>
+        <div class="page-sub" id="last-update">Updated: --</div>
+      </div>
+      <div style="display:flex;gap:6px">
+        <button class="btn btn-secondary" onclick="quickCreate(0.5,'GB')">+ 0.5 GB</button>
+        <button class="btn btn-primary" onclick="quickCreate(1,'GB')">+ 1 GB</button>
+      </div>
+    </div>
+    <div class="stats-row">
+      <div class="stat-card">
+        <div class="stat-label" data-en="Traffic" data-fa="ØªØ±Ø§ÙÛŒÚ©">Traffic</div>
+        <div class="stat-value" id="s-traffic">--<span class="stat-unit"> MB</span></div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label" data-en="Inbounds" data-fa="Ø§ÛŒÙ†Ø¨Ø§Ù†Ø¯Ù‡Ø§">Inbounds</div>
+        <div class="stat-value" id="s-links">--</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label" data-en="Uptime" data-fa="Ø¢Ù¾ØªØ§ÛŒÙ…">Uptime</div>
+        <div class="stat-value" id="s-uptime" style="font-size:16px">--</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label" data-en="Domain" data-fa="Ø¯Ø§Ù…Ù†Ù‡">Domain</div>
+        <div class="stat-value" id="s-domain" style="font-size:11px;word-break:break-all;font-weight:500">--</div>
+      </div>
+    </div>
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-header"><div class="card-title">CPU Usage</div><span id="s-cpu-val" style="font-size:18px;font-weight:700;color:var(--primary)">--%</span></div>
+        <div class="sys-bar"><div class="sys-bar-fill" id="s-cpu-bar" style="width:0%;background:var(--primary)"></div></div>
+      </div>
+      <div class="card">
+        <div class="card-header"><div class="card-title">Memory</div><span id="s-mem-val" style="font-size:18px;font-weight:700;color:var(--green)">--%</span></div>
+        <div class="sys-bar"><div class="sys-bar-fill" id="s-mem-bar" style="width:0%;background:var(--green)"></div></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header"><div class="card-title">Traffic Chart</div></div>
+      <div style="height:180px"><canvas id="trafficChart"></canvas></div>
+    </div>
+  </section>
+
+  <section class="page" id="page-inbounds">
+    <div class="page-header">
+      <div>
+        <div class="page-title" data-en="Inbounds" data-fa="Ø§ÛŒÙ†Ø¨Ø§Ù†Ø¯Ù‡Ø§">Inbounds</div>
+        <div class="page-sub">VLESS over WebSocket</div>
+      </div>
+      <button class="btn btn-primary" onclick="showAddModal()">+ Add</button>
+    </div>
+    <div class="inbounds-toolbar">
+      <div class="search-box">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input id="inbound-search" placeholder="Search by name or UUID..." oninput="filterInbounds()">
+      </div>
+      <div class="filter-chips">
+        <button class="chip active" onclick="setFilter('all',this)">All</button>
+        <button class="chip" onclick="setFilter('active',this)">Active</button>
+        <button class="chip" onclick="setFilter('disabled',this)">Disabled</button>
+      </div>
+    </div>
+    <div class="card" style="border-radius:12px;overflow:hidden;padding:0">
+      <div class="table-wrap">
+        <table class="table">
+          <thead><tr>
+            <th style="width:32px">ID</th>
+            <th>Remark</th>
+            <th style="width:56px">Type</th>
+            <th>Traffic</th>
+            <th style="width:64px">Status</th>
+            <th style="width:100px">Actions</th>
+          </tr></thead>
+          <tbody id="links-tbody"></tbody>
+        </table>
+      </div>
+      <div class="inbound-cards" id="inbound-cards"></div>
+      <div class="empty" id="links-empty" style="display:none">
+        <div class="empty-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.3"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/></svg>
+        </div>
+        <div>No inbounds found</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page" id="page-traffic">
+    <div class="page-header"><div><div class="page-title">Traffic</div><div class="page-sub">Traffic statistics</div></div></div>
+    <div class="card">
+      <div class="card-header"><div class="card-title">Overview</div></div>
+      <div class="status-item"><span class="status-key">Total Traffic</span><span class="status-val" id="t-traffic">-- MB</span></div>
+      <div class="status-item"><span class="status-key">Total Requests</span><span class="status-val" id="t-reqs">--</span></div>
+      <div class="status-item"><span class="status-key">Uptime</span><span class="status-val" id="t-uptime">--</span></div>
+    </div>
+  </section>
+
+  <section class="page" id="page-security">
+    <div class="page-header"><div><div class="page-title">Security</div><div class="page-sub">Change panel password</div></div></div>
+    <div class="card" style="max-width:400px">
+      <div class="form-group">
+        <label class="form-label">Current Password</label>
+        <input class="form-input" type="password" id="cur-pw" placeholder="Enter current password">
+      </div>
+      <div class="form-group">
+        <label class="form-label">New Password</label>
+        <input class="form-input" type="password" id="new-pw" placeholder="Min 4 characters">
+      </div>
+      <button class="btn btn-primary" onclick="changePassword()" style="margin-top:4px">Update Password</button>
+    </div>
+  </section>
+</main>
+
+<div class="modal-overlay" id="add-modal" onclick="if(event.target===this)this.classList.remove('show')">
+  <div class="modal" style="position:relative">
+    <button class="modal-close" onclick="$('#add-modal').classList.remove('show')">x</button>
+    <div class="modal-title">Add Inbound</div>
+    <div class="form-group">
+      <label class="form-label">Remark</label>
+      <input class="form-input" id="new-label" placeholder="e.g. User 1">
+    </div>
+    <div class="form-row">
+      <div class="form-group" style="flex:1">
+        <label class="form-label">Traffic Limit</label>
+        <input class="form-input" id="new-limit" type="number" min="0" step="0.1" placeholder="0 = Unlimited">
+      </div>
+      <div class="form-group" style="min-width:80px;max-width:100px">
+        <label class="form-label">Unit</label>
+        <select class="form-select" id="new-unit"><option value="GB">GB</option></select>
+      </div>
+    </div>
+    <button class="btn btn-primary" onclick="createLink()" style="width:100%;margin-top:8px;justify-content:center">Create</button>
+  </div>
+</div>
+
+<div class="modal-overlay" id="detail-modal" onclick="if(event.target===this)this.classList.remove('show')">
+  <div class="modal" style="position:relative;max-width:540px">
+    <button class="modal-close" onclick="$('#detail-modal').classList.remove('show')">x</button>
+    <div class="modal-title" id="detail-title">Inbound Details</div>
+    <div id="detail-content"></div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="qr-modal" onclick="if(event.target===this)this.classList.remove('show')">
+  <div class="modal" style="position:relative">
+    <button class="modal-close" onclick="$('#qr-modal').classList.remove('show')">x</button>
+    <div class="modal-title">QR Code</div>
+    <div class="qr-box"><img id="qr-img" src="" alt="QR"></div>
+    <div style="margin-top:14px;text-align:center;display:flex;gap:8px;justify-content:center">
+      <button class="btn btn-primary btn-sm" onclick="downloadQR()" style="padding:8px 20px">Download</button>
+      <button class="btn btn-secondary btn-sm" onclick="$('#qr-modal').classList.remove('show')" style="padding:8px 20px">Close</button>
+    </div>
+  </div>
+</div>
+
+<script>
+let lang=localStorage.getItem('ren_lang')||'en';
+let theme=localStorage.getItem('ren_theme')||'dark';
+let allLinks=[];let currentFilter='all';let statsData={};let trafficChart=null;
+
+function setLang(l){lang=l;document.getElementById('lang-en').classList.toggle('active',l==='en');document.getElementById('lang-fa').classList.toggle('active',l==='fa');document.body.dir=l==='fa'?'rtl':'ltr';document.querySelectorAll('[data-en]').forEach(el=>{const v=el.getAttribute('data-'+l);if(v)el.textContent=v});localStorage.setItem('ren_lang',l)}
+function applyTheme(t){theme=t;document.documentElement.setAttribute('data-theme',t);localStorage.setItem('ren_theme',t);const btn=$('#theme-btn');if(btn)btn.innerHTML=t==='dark'?'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>':'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>'}
+function toggleTheme(){applyTheme(theme==='dark'?'light':'dark')}
+function showAddModal(){$('#add-modal').classList.add('show')}
+function setFilter(f,el){currentFilter=f;document.querySelectorAll('.chip').forEach(c=>c.classList.remove('active'));el.classList.add('active');filterInbounds()}
+function filterInbounds(){const q=($('#inbound-search')?.value||'').toLowerCase();let filtered=allLinks;if(currentFilter==='active')filtered=filtered.filter(l=>l.active);if(currentFilter==='disabled')filtered=filtered.filter(l=>!l.active);if(q)filtered=filtered.filter(l=>l.label.toLowerCase().includes(q)||l.uuid.toLowerCase().includes(q));renderLinks(filtered)}
+function fmtBytes(b){return b>1073741824?(b/1073741824).toFixed(2)+' GB':b>1048576?(b/1048576).toFixed(2)+' MB':(b/1024).toFixed(1)+' KB'}
+function fmtLimit(b){if(b===0)return'Unlimited';const gb=b/1073741824;return(gb%1===0?gb.toFixed(0):gb.toFixed(1))+' GB'}
+
+const $=s=>document.querySelector(s);
+const $$=s=>document.querySelectorAll(s);
+$$('.nav-item').forEach(el=>el.addEventListener('click',()=>switchPage(el.dataset.page)));
+function switchPage(id){$$('.page').forEach(p=>p.classList.remove('active'));$(`#page-${id}`)?.classList.add('active');$$('.nav-item').forEach(n=>n.classList.toggle('active',n.dataset.page===id));$('#sidebar').classList.remove('open');$('#sidebar-overlay').classList.remove('show')}
+function toast(msg,err=false){const t=$('#toast');t.textContent=msg;t.className='toast'+(err?' error':'')+' show';setTimeout(()=>t.classList.remove('show'),3000)}
+function esc(s){return s.replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
+
+async function loadStats(){
+  try{
+    const r=await fetch('/stats');if(!r.ok)throw new Error();statsData=await r.json();
+    $('#s-traffic').innerHTML=statsData.total_traffic_mb+'<span class="stat-unit"> MB</span>';
+    $('#s-links').textContent=statsData.links_count;
+    $('#s-uptime').textContent=statsData.uptime;
+    $('#s-domain').textContent=statsData.domain;
+    $('#links-badge').textContent=statsData.links_count;
+    $('#last-update').textContent=(lang==='fa'?'Last update: ':'Updated: ')+new Date().toLocaleTimeString(lang==='fa'?'fa-IR':'en-US');
+    if($('#t-traffic'))$('#t-traffic').textContent=statsData.total_traffic_mb+' MB';
+    if($('#t-reqs'))$('#t-reqs').textContent=statsData.total_requests.toLocaleString();
+    if($('#t-uptime'))$('#t-uptime').textContent=statsData.uptime;
+    if(statsData.cpu_percent!==undefined){const c=statsData.cpu_percent;const cc=c>80?'var(--red)':c>50?'var(--yellow)':'var(--primary)';$('#s-cpu-val').textContent=c.toFixed(1)+'%';$('#s-cpu-val').style.color=cc;$('#s-cpu-bar').style.width=c+'%';$('#s-cpu-bar').style.background=cc}
+    if(statsData.memory_percent!==undefined){const m=statsData.memory_percent;const mc=m>80?'var(--red)':m>50?'var(--yellow)':'var(--green)';$('#s-mem-val').textContent=m.toFixed(1)+'%';$('#s-mem-val').style.color=mc;$('#s-mem-bar').style.width=m+'%';$('#s-mem-bar').style.background=mc}
+    updateChart();
+  }catch(e){}
+}
+
+async function loadLinks(){try{const r=await fetch('/api/links');if(!r.ok)throw new Error();const d=await r.json();allLinks=d.links||[];filterInbounds();}catch(e){}}
+
+function renderLinks(links){
+  const tbody=$('#links-tbody');const empty=$('#links-empty');const cards=$('#inbound-cards');
+  if(!links.length){tbody.innerHTML='';cards.innerHTML='';empty.style.display='block';return;}
+  empty.style.display='none';
+  let idx=links.length;
+  const rows=links.map(l=>{
+    const u=l.used_bytes,lim=l.limit_bytes;
+    const uF=fmtBytes(u);const lF=fmtLimit(lim);
+    const pct=lim>0?Math.min(100,(u/lim)*100):0;
+    const col=pct>90?'var(--red)':pct>70?'var(--yellow)':'var(--primary)';
+    const i=idx--;
+    return {l,uF,lF,pct,col,i};
+  });
+  tbody.innerHTML=rows.map(r=>`<tr>
+    <td style="color:var(--text3);font-size:11px">${r.i}</td>
+    <td style="font-weight:600;font-size:13px">${esc(r.l.label)}</td>
+    <td><span class="tag tag-vless">VLESS</span></td>
+    <td><div class="usage-pill"><span class="used">${r.uF}</span><div class="bar"><div class="fill" style="width:${r.pct}%;background:${r.col}"></div></div><span class="limit">${r.lF}</span></div></td>
+    <td><span class="tag ${r.l.active?'tag-active':'tag-disabled'}">${r.l.active?'On':'Off'}</span></td>
+    <td><div style="display:flex;gap:3px;align-items:center">
+      <button class="toggle ${r.l.active?'on':''}" data-uid="${r.l.uuid}" onclick="toggleLink(this)" title="Toggle"></button>
+      <button class="btn btn-secondary btn-sm" onclick="showDetail('${r.l.uuid}')" title="Info">i</button>
+      <button class="btn-copy" onclick="copyLinkText('${esc(r.l.vless_link)}')" title="Copy">c</button>
+      <button class="btn-qr" onclick="showQRText('${esc(r.l.vless_link)}')" title="QR">qr</button>
+      <button class="btn btn-danger btn-sm" onclick="deleteLink('${r.l.uuid}')" title="Delete">x</button>
+    </div></td>
+  </tr>`).join('');
+
+  cards.innerHTML=rows.map(r=>`<div class="inbound-card">
+    <div class="inbound-card-header">
+      <div style="display:flex;align-items:center;gap:8px">
+        <span class="inbound-card-id">#${r.i}</span>
+        <span class="inbound-card-name">${esc(r.l.label)}</span>
+        <span class="tag tag-vless">VLESS</span>
+      </div>
+      <button class="toggle ${r.l.active?'on':''}" data-uid="${r.l.uuid}" onclick="toggleLink(this)"></button>
+    </div>
+    <div class="usage-pill"><span class="used">${r.uF}</span><div class="bar"><div class="fill" style="width:${r.pct}%;background:${r.col}"></div></div><span class="limit">${r.lF}</span></div>
+    <div class="inbound-card-actions">
+      <button class="btn btn-secondary btn-sm" onclick="showDetail('${r.l.uuid}')">i</button>
+      <button class="btn-copy" onclick="copyLinkText('${esc(r.l.vless_link)}')">c</button>
+      <button class="btn-qr" onclick="showQRText('${esc(r.l.vless_link)}')">qr</button>
+      <button class="btn btn-secondary btn-sm" onclick="resetUsage('${r.l.uuid}')">r</button>
+      <button class="btn btn-danger btn-sm" onclick="deleteLink('${r.l.uuid}')">x</button>
+    </div>
+  </div>`).join('');
+}
+
+async function toggleLink(el){
+  const uid=el.dataset.uid;
+  const link=allLinks.find(l=>l.uuid===uid);
+  if(!link)return;
+  const newActive=!link.active;
+  try{
+    await fetch(`/api/links/${uid}`,{method:'PATCH',headers:{'Content-Type':'application/json'},body:JSON.stringify({active:newActive})});
+    link.active=newActive;
+    filterInbounds();
+    loadStats();
+  }catch(e){}
+}
+
+async function quickCreate(limit,unit){
+  const names=['Ali','Sara','Reza','Nima','Mina','Arash','Yalda','Dariush','Cyrus','Shirin'];
+  const name=names[Math.floor(Math.random()*names.length)]+'-'+Math.floor(Math.random()*100);
+  try{const r=await fetch('/api/links',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({label:name,limit_value:limit,limit_unit:unit})});if(!r.ok)throw new Error();toast('Created: '+name);await loadLinks();await loadStats();}catch(e){toast('Error',true)}
+}
+
+async function createLink(){
+  const label=$('#new-label').value.trim()||'New Link';const val=parseFloat($('#new-limit').value)||0;const unit='GB';
+  if(!/^[a-zA-Z0-9\-_. ]+$/.test(label)){toast('Only English letters allowed',true);return;}
+  try{const r=await fetch('/api/links',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({label,limit_value:val,limit_unit:unit})});if(!r.ok)throw new Error();toast('Created');$('#new-label').value='';$('#new-limit').value='';$('#add-modal').classList.remove('show');await loadLinks();await loadStats();}catch(e){toast('Error',true)}
+}
+
+async function resetUsage(uid){try{await fetch(`/api/links/${uid}`,{method:'PATCH',headers:{'Content-Type':'application/json'},body:JSON.stringify({reset_usage:true})});toast('Reset');await loadLinks();}catch(e){}}
+async function deleteLink(uid){if(!confirm('Delete this inbound?'))return;try{await fetch(`/api/links/${uid}`,{method:'DELETE'});toast('Deleted');await loadLinks();await loadStats();}catch(e){}}
+
+function showDetail(uid){
+  const l=allLinks.find(x=>x.uuid===uid);if(!l)return;
+  const u=l.used_bytes,lim=l.limit_bytes;const uF=fmtBytes(u);const lF=fmtLimit(lim);
+  const pct=lim>0?Math.min(100,(u/lim)*100):0;const col=pct>90?'var(--red)':pct>70?'var(--yellow)':'var(--primary)';
+  const created=l.created_at?new Date(l.created_at).toLocaleString(lang==='fa'?'fa-IR':'en-US'):'--';
+  $('#detail-title').textContent=l.label;
+  $('#detail-content').innerHTML=`
+    <div class="detail-row">
+      <div class="detail-col"><div class="detail-label">Protocol</div><div class="detail-value" style="font-family:inherit"><span class="tag tag-vless">VLESS</span></div></div>
+      <div class="detail-col"><div class="detail-label">Status</div><div class="detail-value" style="font-family:inherit"><span class="tag ${l.active?'tag-active':'tag-disabled'}">${l.active?'Active':'Disabled'}</span></div></div>
+    </div>
+    <div style="margin-bottom:12px"><div class="detail-label">UUID</div><div class="detail-value">${l.uuid}</div></div>
+    <div class="detail-row">
+      <div class="detail-col"><div class="detail-label">Used</div><div class="detail-value">${uF}</div></div>
+      <div class="detail-col"><div class="detail-label">Limit</div><div class="detail-value">${lF}</div></div>
+      <div class="detail-col"><div class="detail-label">Usage</div><div class="detail-value">${pct.toFixed(1)}%</div></div>
+    </div>
+    <div class="sys-bar" style="margin-bottom:12px"><div class="sys-bar-fill" style="width:${pct}%;background:${col}"></div></div>
+    <div style="margin-bottom:12px"><div class="detail-label">Created</div><div class="detail-value" style="font-family:inherit">${created}</div></div>
+    <div style="margin-bottom:0"><div class="detail-label">VLESS Link</div><div class="detail-value">${esc(l.vless_link)}</div></div>
+    <div class="detail-actions">
+      <button class="btn-copy" onclick="copyLinkText('${esc(l.vless_link)}');$('#detail-modal').classList.remove('show')" style="padding:8px 18px;font-size:12px">Copy</button>
+      <button class="btn-qr" onclick="showQRText('${esc(l.vless_link)}');$('#detail-modal').classList.remove('show')" style="padding:8px 18px;font-size:12px">QR Code</button>
+      <button class="btn btn-secondary btn-sm" onclick="resetUsage('${l.uuid}');$('#detail-modal').classList.remove('show')" style="padding:8px 18px">Reset Traffic</button>
+    </div>`;
+  $('#detail-modal').classList.add('show');
+}
+
+function copyLinkText(txt){navigator.clipboard.writeText(txt).then(()=>toast('Copied to clipboard')).catch(()=>toast('Failed to copy',true))}
+function showQRText(txt){if(!txt)return;const box=document.querySelector('.qr-box');box.classList.remove('animate-in','animate-glow');$('#qr-img').src='https://api.qrserver.com/v1/create-qr-code/?size=300x300&data='+encodeURIComponent(txt);$('#qr-modal').classList.add('show');requestAnimationFrame(()=>{box.classList.add('animate-in');setTimeout(()=>box.classList.add('animate-glow'),500)})}
+function downloadQR(){const img=$('#qr-img');if(!img.src)return;const a=document.createElement('a');a.href=img.src;a.download='ren-qr.png';a.click()}
+
+async function changePassword(){
+  const cur=$('#cur-pw').value;const nw=$('#new-pw').value;
+  if(!cur||!nw){toast('Fill all fields',true);return;}
+  try{const r=await fetch('/api/change-password',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({current_password:cur,new_password:nw})});if(!r.ok){const d=await r.json().catch(()=>({}));throw new Error(d.detail||'Error');}toast('Updated');$('#cur-pw').value='';$('#new-pw').value='';}catch(e){toast(e.message,true)}
+}
+
+applyTheme(theme);setLang(lang);
+loadStats();loadLinks();
+setInterval(()=>{loadStats()},10000);
+
+let chartLabels=[];let chartData=[];
+function initChart(){
+  const ctx=document.getElementById('trafficChart');if(!ctx)return;
+  trafficChart=new Chart(ctx,{type:'bar',data:{labels:[],datasets:[{label:'MB',data:[],backgroundColor:'rgba(220,38,38,0.7)',borderColor:'#dc2626',borderWidth:1,borderRadius:4}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{grid:{display:false},ticks:{color:'rgba(255,255,255,0.3)',font:{size:10}}},y:{grid:{color:'rgba(255,255,255,0.05)'},ticks:{color:'rgba(255,255,255,0.3)',font:{size:10},callback:v=>v+' MB'},beginAtZero:true}}}});
+}
+initChart();
+function updateChart(){
+  if(!trafficChart||!statsData.hourly_traffic)return;
+  const ht=statsData.hourly_traffic;
+  const sorted=Object.entries(ht).sort((a,b)=>a[0].localeCompare(b[0])).slice(-12);
+  const labels=sorted.map(e=>e[0]);
+  const data=sorted.map(e=>Math.round(e[1]/1048576));
+  trafficChart.data.labels=labels;trafficChart.data.datasets[0].data=data;
+  trafficChart.update();
+}
+</script>
+</body>
+</html>ú/login)Úresponse_classc              ƒ   ó¸   K  — | j                              t          ¦  «        }t          |¦  «        ƒ d {V —†rt	          d¬¦  «        S t          t          ¬¦  «        S )Nú
+/dashboard©Úurl©Úcontent)rV   rH   rW   rK   r   r   Ú
+LOGIN_HTMLrX   s     r7   Ú
+login_pager€  B  s_   è è € àŒO×Ò¥Ñ/Ô/€EÝ
+˜eÑ
+$Ô
+$Ð$Ð$Ð$Ð$Ð$Ð$ð 2Ý LÐ1Ñ1Ô1Ð1Ý¥
+Ð+Ñ+Ô+Ð+r9   rz  c              ƒ   ó¸   K  — | j                              t          ¦  «        }t          |¦  «        ƒ d {V —†st	          d¬¦  «        S t          t          ¬¦  «        S )Nrw  r{  r}  )rV   rH   rW   rK   r   r   ÚDASHBOARD_HTMLrX   s     r7   Údashboard_pagerƒ  I  s_   è è € àŒO×Ò¥Ñ/Ô/€EÝ! %Ñ(Ô(Ð(Ð(Ð(Ð(Ð(Ð(ð .Ý HÐ-Ñ-Ô-Ð-Ý¥Ð/Ñ/Ô/Ð/r9   Ú__main__z0.0.0.0r   )r™   r   rM   )r   )lra   rç   r   r2   r?   rB   r   Úurllib.parser   Úcollectionsr   r   Úfastapir   r   r	   r
+   r   r   Úfastapi.responsesr
+   r   r   r   Úfastapi.middleware.corsr   Úuvicornrd   Úloggingr  ÚbasicConfigÚINFOÚ	getLoggerrf   Úappr°   r€   rH   r@   r4   Úadd_middlewarer"   r  Ú__annotations__r#   r±   r*   r+   r,   re   r-   ÚLockrÇ   rW   rC   r‹   r8   rè   r=   rA   rF   r$  rK   rN   rY   rk   Úon_eventrl   rw   rc   rŽ   r«   rµ   r  r½   rË   rÕ   rÛ   rß   Úpostrì   rï   rò   rü   r  r  r!  Úpatchr%  Údeleter'  r_  rO  rA  rE  rH  ÚStreamWriterr[  ÚStreamReaderrb  rI  rv  r  r‚  r€  rƒ  Ú__name__Úrunrz   r9   r7   ú<module>r›     s	  ðØ €€€€Ø €€€Ø 	€	€	€	Ø €€€Ø €€€Ø €€€Ø Ð Ð Ð Ð Ð Ø Ð Ð Ð Ð Ð Ø *Ð *Ð *Ð *Ð *Ð *Ð *Ð *à \Ð \Ð \Ð \Ð \Ð \Ð \Ð \Ð \Ð \Ð \Ð \Ð \Ð \Ð \Ð \Ø TÐ TÐ TÐ TÐ TÐ TÐ TÐ TÐ TÐ TÐ TÐ TØ 2Ð 2Ð 2Ð 2Ð 2Ð 2Ø €€€Ø €€€Ø €€€Ø 
+€
+€
+€
+à €Ô ˜'œ,Ð/XÐ YÑ YÔ YÐ YØ	ˆÔ	˜=Ñ	)Ô	)€à
+€gE D°DÐ9Ñ9Ô9€ð 
+ˆC”
+—’˜v tÑ,Ô,Ñ-Ô-ØŒjnŠn˜\Ð+@¨7Ô+@ÀÑ+DÔ+DÑEÔEð
+ð 
+€ð
+ × Ò ØØ%ØØ%Ø%ð ñ ô ð ð €ˆTÐ Ð Ñ ØÐ DÐ Ð Ñ Ø¨QÀÐQZÐQUÔQZÑQ\ÔQ\Ð]Ð]€ØE Ð$Ñ$Ô$€
+ˆEÐ $Ð $Ñ $Ø"{ 3Ñ'Ô'€Ð 'Ð 'Ñ 'Ø(,€ˆUÔ
+ Ñ
+%Ð ,Ð ,Ñ ,à€€tÐ Ð Ñ Ø
+ˆWŒ\‰^Œ^€
+à€Ø€ðJcð J˜cð Jð Jð Jð Jð 	˜˜ r¤z§~¢~Ð6FÈÑ'PÔ'PÑQÔQÐR€Ø€ˆ$Ð Ð Ñ Ø”‘”€
+ð˜cð ð ð ð ð #¨¡*ð °ð ð ð ð ð&  t¡ð &ð &ð &ð &ð
+ ð ð ð ð ð
+ð 
+ð 
+ð ‡‚ˆiÑÔð&ð &ñ Ôð&ð ‡‚ˆjÑÔð#ð #ñ Ôð#ðVCð Vð Vð Vð VðAð A˜˜d™
+ð A¨cð Að Að Að AðBð B˜cð B¨3ð B¸3ð Bð Bð Bð Bð &ð &ð &ð &ð &ð
+˜uð ¨Cð °Cð ð ð ð ðKð Kð Kð
+*¨#ð 
+*ð 
+*ð 
+*ð 
+*ð ‡‚ˆ„ð\ð \ñ „ð\ð ‡‚ˆÑÔðQð Qñ ÔðQð ‡‚ˆ,ÑÔð˜Wð ð ð ñ Ôðð ‡‚ˆ-ÑÔð˜gð ð ð ñ Ôðð ‡‚ˆÑÔð<˜'ð <ð <ð <ñ Ôð<ð ‡‚Ð
+ Ñ!Ô!Ø29°'¸,Ñ2GÔ2Gð ð  wð ð ð ñ "Ô!ðð  ‡‚ˆÑÔØg˜lÑ+Ô+ð ð ð ñ Ôðð  ‡‚ˆ,ÑÔØ*1¨'°,Ñ*?Ô*?ð 	Mð 	M˜wð 	Mð 	Mð 	Mñ Ôð	Mð ‡‚ˆÑÔØw˜|Ñ,Ô,ð ð ð ñ Ôðð ‡‚ÐÑÔØ4;°G¸LÑ4IÔ4Ið ð ˜3ð ¨ð ð ð ñ Ôðð" ‡‚ÐÑÔØ") '¨,Ñ"7Ô"7ð ð ˜3ð ð ð ñ  Ôðð 
+€	ð5¨%ð 5ð 5ð 5ð 5ð,I˜3ð I¨Sð I°Tð Ið Ið Ið Ið*˜ð * ð *ð *ð *ð *ð
+˜yð °'Ô2Fð ÐQTð Ð`cð ð ð ð ð(˜yð °'Ô2Fð ÐQTð Ð`cð ð ð ð ð" ‡‚ˆ|ÑÔð). ið ).°sð ).ð ).ð ).ñ Ôð).ðX`€
+ðFP	€ðf ‡‚ˆ ,€Ñ/Ô/ð,˜gð ,ð ,ð ,ñ 0Ô/ð,ð ‡‚ˆ l€Ñ3Ô3ð0 'ð 0ð 0ð 0ñ 4Ô3ð0ð ˆzÒð :Ø€G„K˜)¨&°¬.Ð9Ñ9Ô9Ð9Ð9Ð9ð:ð :r9   
